@@ -1,11 +1,18 @@
 
-import './App.css';
 import React from 'react';
 
-function App() {
+import Header from "../src/components/Header";
+import Footer from "../src/components/Footer";
+import Main from "./components/Main/Main";
+
+import './App.css';
+
+const App = () => {
   return (
     <React.Fragment>
-      <p>kkt</p>
+      <Header />
+      <Main />
+      <Footer />
     </React.Fragment>
   );
 }
