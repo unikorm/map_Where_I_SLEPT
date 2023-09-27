@@ -1,5 +1,5 @@
 
-import '../App.css';
+import "../App.css";
 
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import About from "../pages/About";
@@ -14,7 +14,7 @@ const Header = () => {
                 </li>
             </ul>
             </header>
-            
+
             <Routes>
                 <Route path="/aboutMe" Component={About} />
             </Routes>

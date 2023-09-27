@@ -8,3 +8,19 @@ header {
     list-style-type: none;
     padding: 0;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactsSectionInFooter {
+    list-style-type: none;
+    padding: 0;
+}
+
+.descriptionSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

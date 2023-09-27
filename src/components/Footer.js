@@ -1,8 +1,10 @@
 
+import "../App.css";
+
 const Footer = () => {
     return (
         <footer>
-            <ul>
+            <ul className="contactsSectionInFooter">
                 <li>here will be contact maybe</li>
             </ul>
         </footer>

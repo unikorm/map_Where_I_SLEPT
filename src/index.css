@@ -2,3 +2,8 @@ html, body {
     background-color: rgb(255, 247, 237);
     font-family: 'Courier Prime', monospace;
 }
+
+body {
+    display: flex;
+    margin: 1rem;
+}
