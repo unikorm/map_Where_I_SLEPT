@@ -1,0 +1,10 @@
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation {
+    list-style-type: none;
+    padding: 0;
+}
