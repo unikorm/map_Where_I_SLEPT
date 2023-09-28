@@ -1,6 +1,10 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
@@ -15,7 +19,11 @@ const App = () => {
     <Router>
       <React.Fragment>
         <Header />
-        <Main />
+        {/* <Main /> */}
+        <Routes>
+          <Route exact path="/" Component={Main} />
+          <Route exact path="/aboutMe" Component={About} />
+        </Routes>
         <Footer />
       </React.Fragment>
     </Router>

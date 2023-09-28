@@ -6,5 +6,6 @@ export const markers = [
     { position: [46.36826739049281, 14.084859889952476], text: "Tu sme spinkali dve noci po sebe <br /> na Veľkonočnom tripe do Slovinska. <br /> Začiatok jari a nádherné miesto." },
     { position: [45.77317382364392, 13.527147980410941], text: "Tu sme spinkali pri mori <br />  na našom letnom tripe k moru, <br /> bolo príliš plytké a plné ľudí..."},
     { position: [48.46852769912247, 18.882837500699537], text: "Tu sme spinkali prvý krát pri dalších ľuďoch, <br /> ktorý spali v aute, krásne tu bolo <br />  v tom srdci Slovenska..." },
-    { position: [48.883877008772174, 19.037511179589945], text: "Tu som spinkal už dávno s kamarátom, <br /> len tak, v divočine Velkej Fatry." }
+    { position: [48.883877008772174, 19.037511179589945], text: "Tu som spinkal už dávno s kamarátom, <br /> len tak, v divočine Velkej Fatry." },
+    { position: [49.22502905545203, 18.600451264633065], text: "Naše obľúbené miesto blízko domova <br /> kde máme miesto na opekanie, <br /> jazierko a vždy pokoj." }
 ];
