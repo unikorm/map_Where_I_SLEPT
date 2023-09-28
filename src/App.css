@@ -24,3 +24,11 @@ footer {
     flex-direction: column;
     text-align: center;
 }
+
+.mapContainer {
+    width: 95%; /* 95 */
+    height: 400px;  /* 600 */ 
+    border: 2px solid #ccc; 
+    margin: 1rem auto 1rem;
+    overflow: hidden;
+}
