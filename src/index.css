@@ -3,7 +3,6 @@ html, body {
     font-family: 'Courier Prime', monospace;
 }
 
-body {
-    display: flex;
-    margin: 1rem;
+#root {
+    width: 100%;
 }

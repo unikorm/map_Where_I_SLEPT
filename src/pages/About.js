@@ -1,9 +1,11 @@
 
 import { Link } from "react-router-dom";
 
+import "../App.css";
+
 const AboutMe = () => {
     return (
-        <section>
+        <section className="aboutMeSection">
             <p>e to vsjo...</p>
             <Link to="/">⬅️</Link>
         </section>

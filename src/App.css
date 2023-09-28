@@ -42,3 +42,10 @@ main h2 {
 .blogSection {
     text-align: center;
 }
+
+.aboutMeSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+}
