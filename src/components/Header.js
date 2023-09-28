@@ -1,25 +1,22 @@
 
 import "../App.css";
 
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import About from "../pages/About";
 
 const Header = () => {
-    return (
-        <Router>
-            <header>
-            <ul className="navigation">
-                <li>
-                    <Link to="/aboutMe">About ME</Link>
-                </li>
-            </ul>
-            </header>
+    const navigate = useNavigate();
 
-            <Routes>
-                <Route path="/aboutMe" Component={About} />
-            </Routes>
-        </Router>
-        
+    const handleAboutClick = () => {
+        navigate("About")
+    };
+
+    return (
+        <header>
+        <ul className="navigation">
+            <li>About ME</li>  {/* here must be link to about me */}
+        </ul>
+        </header>
     );
 }
 

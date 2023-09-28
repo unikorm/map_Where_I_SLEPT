@@ -3,8 +3,8 @@ import "../../App.css";
 
 const Blog = () => {
     return (
-        <section>
-
+        <section className="blogSection">
+            <h3>O miestach kde som spal</h3>
         </section>
     );
 }
