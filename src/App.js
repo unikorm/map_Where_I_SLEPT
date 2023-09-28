@@ -10,6 +10,7 @@ import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import Main from "./components/Main/Main";
 import About from "./pages/About";
+import Dark from './pages/Secret';
 
 
 
