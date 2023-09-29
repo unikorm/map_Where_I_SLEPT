@@ -4,10 +4,6 @@ import logo from "../images/logo.svg";
 
 import { Link, useLocation } from 'react-router-dom';
 
-const linkStyle = {
-    textDecoration: "none",
-    color: "red",
-};
 
 const scrollToTop = () => {
     window.scrollTo({top: 0, behavior: "smooth"});
@@ -16,18 +12,19 @@ const scrollToTop = () => {
 const Header = () => {
     const location = useLocation();
 
-    const homePageLink = location.pathname === "/" ? <Link to="/" style={linkStyle} onClick={scrollToTop}>myPATH</Link> : <Link to="/" style={linkStyle}>myPATH</Link>
+    const includeScrollTOTop = location.pathname === "/";
+    const isAboutMeActive = location.pathname === "/aboutMe";
 
     return (
         <header className="header">
             <nav className="navigation">
                 <div className="logoSectionLeft">
                     <img src={logo}/>
-                    { homePageLink }
+                    <Link to="/" onClick={includeScrollTOTop ? scrollToTop : undefined} className="logoLinkStyle">myPATH</Link>
                 </div>
                 <ul className="menuNavigationCentre">
                     <li>
-                        <Link to="/aboutMe" style={linkStyle}>About ME</Link>
+                        <Link to="/aboutMe" className={`linkStyleMenu ${isAboutMeActive ? "active-link" : ""}`}>About ME</Link>
                     </li>
                 </ul>
                 <div className="buttonRight">
