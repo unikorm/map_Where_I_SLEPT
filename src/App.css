@@ -10,10 +10,22 @@
     z-index: 3000;
 }
 
-.navigation {
+.menuNavigation {
     list-style-type: none;
     padding: 0;
     margin: 1.8rem 0;
+}
+
+.navigation {
+    padding: .4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
 }
 
 footer {
@@ -32,11 +44,15 @@ footer {
     text-align: center;
 }
 
+.main {
+    margin-top: 6.5rem;
+}
+
 .mapContainer {
     width: 96%; /* 95 */
     height: 685px;  /* 600 */ 
     border: 2px solid #ccc; 
-    margin: 5.9rem auto 1rem;
+    margin: 1rem auto 1rem;
     overflow: hidden;
     border-radius: 20px;
     border-style: none;
@@ -51,6 +67,7 @@ main h2 {
 }
 
 .aboutMeSection {
+    margin-top: 6.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -69,12 +86,6 @@ main h2 {
 }
 
 .postUnit {
-    /* min-width: 19rem;
-    max-width: 24rem;
-    flex-grow: 1;
-    background-color: aquamarine;
-    margin: .3rem; */
-
     display: flex;
     flex-direction: column;
     padding: .6rem;

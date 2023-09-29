@@ -6,7 +6,7 @@ import Description from "../Main/Description";
 
 const Main = () => {
     return (
-        <main>
+        <main className="main">
             <Map />
             <Description />
             <Blog />
