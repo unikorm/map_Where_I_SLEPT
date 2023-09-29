@@ -1,17 +1,20 @@
 
 import "../../App.css";
 import BlogPost from "./BlogPost";
-
-
-// zobrat data o postoch na blog a spravit s nimi nieco aby som ich po jednom mohol dat ako props-i
-
+import blogData from "../../blogData.json";
 
 const Blog = () => {
+    const posts = blogData.posts;
+
     return (
         <section className="blogSection">
             <h3>O miestach kde som spal</h3>
             <section>
-                <BlogPost post={"some data"}/> {/* map over all posts here */}
+                {
+                    posts.map(( post, index ) => {
+                        <BlogPost key={index} post={post} />
+                    })
+                }
             </section>
         </section>
     );

@@ -1,0 +1,24 @@
+
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "examples",
+        "place": "places",
+        "date": "2023-09-29"
+      },
+      {
+        "id": 2,
+        "title": "Sexamples",
+        "place": "places",
+        "date": "2023-09-30"
+      },
+      {
+        "id": 3,
+        "title": "examples",
+        "place": "places",
+        "date": "2023-10-01"
+      }
+    ]
+  }
+  
