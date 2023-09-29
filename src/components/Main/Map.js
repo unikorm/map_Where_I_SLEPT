@@ -17,7 +17,7 @@ const Map = () => {
     const zoom = 6 // Adjust the zoom level
 
     return (
-        <MapContainer center={center} zoom={zoom} maxZoom="15" scrollWheelZoom={true} className="mapContainer">
+        <MapContainer center={center} zoom={zoom} maxZoom="15" scrollWheelZoom={false} className="mapContainer">
             <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

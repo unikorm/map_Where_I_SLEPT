@@ -1,5 +1,6 @@
 
 import "../App.css";
+import logo from "../images/logo.svg";
 
 import { Link } from 'react-router-dom';
 
@@ -13,12 +14,17 @@ const linkStyle = {
 const Header = () => {
 
     return (
-        <header>
-        <ul className="navigation">
-            <li>
-                <Link to="/aboutMe" style={linkStyle}>About ME</Link>
-            </li>
-        </ul>
+        <header className="header">
+            <nav>
+                <div>
+                    <Link to="/" ><img src={logo} className=""/></Link>
+                </div>
+                <ul className="navigation">
+                    <li>
+                        <Link to="/aboutMe" style={linkStyle}>About ME</Link>
+                    </li>
+                </ul>
+            </nav>
         </header>
     );
 }

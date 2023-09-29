@@ -1,12 +1,19 @@
 
-header {
+.header {
     display: flex;
     justify-content: center;
+    background-color: blanchedalmond;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3000;
 }
 
 .navigation {
     list-style-type: none;
     padding: 0;
+    margin: 1.8rem 0;
 }
 
 footer {
@@ -26,10 +33,10 @@ footer {
 }
 
 .mapContainer {
-    width: 95%; /* 95 */
-    height: 400px;  /* 600 */ 
+    width: 96%; /* 95 */
+    height: 685px;  /* 600 */ 
     border: 2px solid #ccc; 
-    margin: 1rem auto 1rem;
+    margin: 5.9rem auto 1rem;
     overflow: hidden;
     border-radius: 20px;
     border-style: none;
@@ -50,16 +57,36 @@ main h2 {
     width: auto;
 }
 
-.postsTable {
+.blogSection {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.postsTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 2fr)); /* Adjust min and max width as needed */
+    gap: 1rem;
 }
 
 .postUnit {
-    min-width: 19rem;
+    /* min-width: 19rem;
     max-width: 24rem;
     flex-grow: 1;
     background-color: aquamarine;
-    margin: .3rem;
+    margin: .3rem; */
+
+    display: flex;
+    flex-direction: column;
+    padding: .6rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: rgb(33, 119, 119);
+
+}
+
+.postCoverImage {
+    
+    max-width: 100%;
+    border-radius: 1rem;
 }
