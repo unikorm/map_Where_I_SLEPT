@@ -9,11 +9,11 @@ const Blog = () => {
     return (
         <section className="blogSection">
             <h3>O miestach kde som spal</h3>
-            <section>
+            <section className="postsTable">
                 {
-                    posts.map(( post, index ) => {
-                        <BlogPost key={index} post={post} />
-                    })
+                posts.map(( post ) => (
+                    <BlogPost key={post.id} post={post} />
+                ))
                 }
             </section>
         </section>

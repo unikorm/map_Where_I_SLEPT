@@ -3,7 +3,7 @@ import "../../App.css";
 
 const BlogPost = ({ post }) => {
     return (
-        <article key={post.id}>
+        <article className="postUnit">
             <h3>{post.title}</h3>
             <p>{post.place}</p>
         </article>
