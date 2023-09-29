@@ -7,25 +7,59 @@
     top: 0;
     left: 0;
     right: 0;
+    height: 6rem;
     z-index: 3000;
 }
 
-.menuNavigation {
+.menuNavigationCentre {
     list-style-type: none;
     padding: 0;
-    margin: 1.8rem 0;
+    margin: auto 1rem;
+    display: flex;
+    justify-content: right;
+    flex-grow: 4;
 }
 
 .navigation {
     padding: .4rem;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
-.logoSection {
+.logoSectionLeft {
     display: flex;
     align-items: center;
+    flex-grow: 1;
+}
+
+.buttonToGithub {
+    background-color: aquamarine;
+    border: none;
+    border-radius: 15px;
+    color: blueviolet;
+    padding: 1rem;
+    min-width: 8rem;
+    min-height: 3rem;
+}
+
+.buttonToGithub:hover {
+    background-color: blue;
+    color: blanchedalmond;
+    transition: .9s;
+}
+
+.buttonToGithub :focus {
+    outline-color: transparent;
+    outline-style:solid .9rem #5a01a7;
+    transition: .9s;
+}
+
+.buttonRight {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: right;
 }
 
 footer {
@@ -45,7 +79,7 @@ footer {
 }
 
 .main {
-    margin-top: 6.5rem;
+    margin-top: 7rem;
 }
 
 .mapContainer {

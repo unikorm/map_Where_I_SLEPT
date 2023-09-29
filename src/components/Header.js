@@ -21,15 +21,18 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="navigation">
-                <div className="logoSection">
+                <div className="logoSectionLeft">
                     <img src={logo}/>
                     { homePageLink }
                 </div>
-                <ul className="menuNavigation">
+                <ul className="menuNavigationCentre">
                     <li>
                         <Link to="/aboutMe" style={linkStyle}>About ME</Link>
                     </li>
                 </ul>
+                <div className="buttonRight">
+                    <button type="button" className="buttonToGithub">my GITHUB</button>
+                </div>
             </nav>
         </header>
     );
