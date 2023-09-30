@@ -130,11 +130,12 @@ main h2 {
 .blogSection {
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
 }
 
 .postsTable {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 2fr)); /* Adjust min and max width as needed */
+    grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
     gap: 1rem;
 }
 
@@ -146,7 +147,12 @@ main h2 {
     border-style: none;
     border-radius: 1rem;
     background-color: rgb(33, 119, 119);
+    transition: transform .4s ease-out;
+}
 
+.postUnit:hover {
+    transform: scale(1.017); /* Scale up the element slightly on hover */
+    box-shadow:  0px 3px 3px rgba(0, 0, 0, 0.294); /* Add a subtle shadow on hover */
 }
 
 .postCoverImage {
