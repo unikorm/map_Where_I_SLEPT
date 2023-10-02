@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 
-import "../App.css";
+import "../styles/about.css";
 
 const title = "About ME";  // somehow put this title when i click on about page 
 

@@ -1,5 +1,5 @@
 
-import "../App.css";
+import "../styles/header.css";
 import logo from "../images/logo.svg";
 
 import { Link, useLocation } from 'react-router-dom';

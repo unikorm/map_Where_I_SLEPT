@@ -1,5 +1,5 @@
 
-import "../../App.css";
+import "../../styles/main.css";
 import Map from "../Main/Map";
 import Blog from "../Main/Blog";
 import Description from "../Main/Description";

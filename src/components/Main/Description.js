@@ -1,5 +1,5 @@
 
-import "../../App.css";
+import "../../styles/description.css";
 
 const Description = () => {
     return (

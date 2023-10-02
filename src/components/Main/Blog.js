@@ -1,5 +1,5 @@
 
-import "../../App.css";
+import "../../styles/blog.css";
 import BlogPost from "./BlogPost";
 import blogData from "../../blogData.json";
 

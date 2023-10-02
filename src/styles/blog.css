@@ -1,0 +1,13 @@
+
+.blogSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.postsTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+    gap: 1rem;
+}

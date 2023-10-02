@@ -1,5 +1,5 @@
 
-import "../App.css";
+import "../styles/footer.css";
 
 const Footer = () => {
     return (

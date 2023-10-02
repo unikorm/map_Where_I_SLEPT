@@ -1,0 +1,10 @@
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.contactsSectionInFooter {
+    list-style-type: none;
+    padding: 0;
+}

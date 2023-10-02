@@ -1,8 +1,6 @@
 
-.aboutMeSection {
-    margin-top: 6.5rem;
+.descriptionSection {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: auto;
 }

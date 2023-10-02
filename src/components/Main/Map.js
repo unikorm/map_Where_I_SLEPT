@@ -1,5 +1,5 @@
 
-import "../../App.css";
+import "../../styles/map.css";
 import { markers } from "../../positions.js";
 
 import React from "react";

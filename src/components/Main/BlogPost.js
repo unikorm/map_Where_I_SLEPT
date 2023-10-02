@@ -1,5 +1,5 @@
 
-import "../../App.css";
+import "../../styles/blogPost.css";
 import postCover from "../../images/postCoverTwo.webp";
 
 const BlogPost = ({ post }) => {
