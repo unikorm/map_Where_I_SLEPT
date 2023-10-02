@@ -3,9 +3,13 @@
     "posts": [
       {
         "id": 1,
-        "title": "examples",
-        "place": "places",
-        "date": "2023-09-29"
+        "title": "Pri nemocnici",
+        "place": "Lasnitzhone, Graz",
+        "date": "2023-04-7",
+        "how": "car",
+        "description": "Toto miesto bolo z núdze vybrané, už bolo neskoro a báli sme sa o auto, takže sme to odstavili pri nemocnici alebo starobinci, neviem čo to bolo a vyspali sa na predných stoličkách.",
+        "content": "tu bude dlhy text, opis a take srandy o tom mieste a kontext...",
+        "info": "tu budu prakticke info o mieste a tak podobne"
       },
       {
         "id": 2,

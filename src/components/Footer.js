@@ -1,7 +1,7 @@
 
 import styles from "../styles/footer.module.css";
 import logo from "../images/logo.svg";
-import {useActivePage} from "../customHooks/useActivePage";
+import { useActivePage } from "../customHooks/useActivePage";
 
 import { Link } from 'react-router-dom';
 
