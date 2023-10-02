@@ -1,30 +1,46 @@
 
 import styles from "../styles/footer.module.css";
 import logo from "../images/logo.svg";
+import useActivePage from "../customHooks/useActivePage";
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const scrollToTop = () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 };
 
 const Footer = () => {
-    const location = useLocation();
+    const { activePage, setActive } = useActivePage();
 
-    const includeScrollTOTop = location.pathname === "/";
-    const isAnotherPageActive = location.pathname === "/aboutMe";
+    const includeScrollTOTop = activePage === "main";
+    const isAnotherPageActive = activePage === "aboutMe";
+
+    const handleAboutMeClick = () => {
+        setActive("aboutMe");
+    };
 
     return (
         <footer>
             <section className={styles.logoInFooter}>
                 <div className={styles.logoSectionLeft}>
-                    <Link to="/" onClick={includeScrollTOTop ? scrollToTop : undefined} className={styles.logoLinkStyle}><img src={logo}/><p>myPATH</p></Link>
+                    <Link to="/" onClick={() => {
+                        setActive("main");
+                        if (includeScrollTOTop) {
+                            scrollToTop();
+                        }}} className={styles.logoLinkStyle}>
+                            <img src={logo} alt="Logo"/>
+                            <p>myPATH</p>
+                    </Link>
                 </div>
             </section>
             <section className={styles.menuAndContactsInFooter}>
                 <ul className={styles.contactsSectionInFooter}>
                     <li>
-                    <Link to="/aboutMe" className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>About ME</Link>
+                        <Link to="/aboutMe"
+                        onClick={handleAboutMeClick}
+                        className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>
+                            About ME
+                        </Link>
                     </li>
                 </ul>
             </section>

@@ -1,8 +1,9 @@
 
 import styles from "../styles/header.module.css";
 import logo from "../images/logo.svg";
+import useActivePage from "../customHooks/useActivePage";
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const scrollToTop = () => {
@@ -10,10 +11,14 @@ const scrollToTop = () => {
 };
 
 const Header = () => {
-    const location = useLocation();
+    const { activePage, setActive } = useActivePage();
 
-    const includeScrollTOTop = location.pathname === "/";
-    const isAnotherPageActive = location.pathname === "/aboutMe";
+    const includeScrollTOTop = activePage === "main";
+    const isAnotherPageActive = activePage === "aboutMe";
+
+    const handleAboutMeClick = () => {
+        setActive("aboutMe");
+    };
 
     return (
         <header className={styles.header}>
