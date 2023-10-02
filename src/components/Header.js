@@ -13,7 +13,7 @@ const Header = () => {
     const location = useLocation();
 
     const includeScrollTOTop = location.pathname === "/";
-    const isAboutMeActive = location.pathname === "/aboutMe";
+    const isAnotherPageActive = location.pathname === "/aboutMe";
 
     return (
         <header className="header">
@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
                 <ul className="menuNavigationCentre">
                     <li>
-                        <Link to="/aboutMe" className={`linkStyleMenu ${isAboutMeActive ? "active-link" : ""}`}>About ME</Link>
+                        <Link to="/aboutMe" className={`linkStyleMenu ${isAnotherPageActive ? "active-link" : ""}`}>About ME</Link>
                     </li>
                 </ul>
                 <div className="buttonRight">

@@ -2,9 +2,14 @@
 footer {
     display: flex;
     justify-content: center;
+    background-color: aquamarine;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .contactsSectionInFooter {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
