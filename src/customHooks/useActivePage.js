@@ -1,17 +1,21 @@
+import React, { createContext, useContext, useState } from 'react';
 
-import { useState } from "react";
+const ActivePageContext = createContext();
 
-const useActivePage = () => {
-    const [activePage, setActivePage] = useState(null);
+export const ActivePageProvider = ({ children }) => {
+  const [activePage, setActivePage] = useState(null);
 
-    const setActive = (page) => {
-        setActivePage(page);
-    };
+  const setActive = (page) => {
+    setActivePage(page);
+  };
 
-    return {
-        activePage,
-        setActive,
-    };
+  return (
+    <ActivePageContext.Provider value={{ activePage, setActive }}>
+      {children}
+    </ActivePageContext.Provider>
+  );
 };
 
-export default useActivePage;
+export const useActivePage = () => {
+  return useContext(ActivePageContext);
+};

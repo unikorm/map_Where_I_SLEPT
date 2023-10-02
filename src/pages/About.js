@@ -2,9 +2,7 @@
 import { Link } from "react-router-dom";
 
 import styles from "../styles/about.module.css";
-import useActivePage from "../customHooks/useActivePage";
-
-const title = "About ME";  // somehow put this title when i click on about page 
+import {useActivePage} from "../customHooks/useActivePage"; 
 
 const AboutMe = () => {
     const { activePage, setActive } = useActivePage();
