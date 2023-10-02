@@ -1,6 +1,6 @@
 
 import "../../App.css";
-import postCover from "../../images/postCover.webp";
+import postCover from "../../images/postCoverTwo.webp";
 
 const BlogPost = ({ post }) => {
     return (
