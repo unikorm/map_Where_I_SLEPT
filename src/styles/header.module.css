@@ -48,7 +48,7 @@
     transition: .9s;
 }
 
-.buttonToGithub :focus {
+.buttonToGithub:focus {
     outline-color: transparent;
     outline-style:solid .9rem #5a01a7;
     transition: .9s;
@@ -78,4 +78,6 @@
 
 .logoLinkStyle {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }

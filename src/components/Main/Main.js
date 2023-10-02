@@ -1,12 +1,12 @@
 
-import "../../styles/main.css";
+import styles from "../../styles/main.module.css";
 import Map from "../Main/Map";
 import Blog from "../Main/Blog";
 import Description from "../Main/Description";
 
 const Main = () => {
     return (
-        <main className="main">
+        <main className={styles.main}>
             <Map />
             <Description />
             <Blog />

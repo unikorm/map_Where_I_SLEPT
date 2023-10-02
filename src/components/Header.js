@@ -1,5 +1,5 @@
 
-import "../styles/header.css";
+import styles from "../styles/header.module.css";
 import logo from "../images/logo.svg";
 
 import { Link, useLocation } from 'react-router-dom';
@@ -16,19 +16,18 @@ const Header = () => {
     const isAnotherPageActive = location.pathname === "/aboutMe";
 
     return (
-        <header className="header">
-            <nav className="navigation">
+        <header className={styles.header}>
+            <nav className={styles.navigation}>
                 <div className="logoSectionLeft">
-                    <img src={logo}/>
-                    <Link to="/" onClick={includeScrollTOTop ? scrollToTop : undefined} className="logoLinkStyle">myPATH</Link>
+                    <Link to="/" onClick={includeScrollTOTop ? scrollToTop : undefined} className={styles.logoLinkStyle}><img src={logo}/><p>myPATH</p></Link>
                 </div>
-                <ul className="menuNavigationCentre">
+                <ul className={styles.menuNavigationCentre}>
                     <li>
-                        <Link to="/aboutMe" className={`linkStyleMenu ${isAnotherPageActive ? "active-link" : ""}`}>About ME</Link>
+                    <Link to="/aboutMe" className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>About ME</Link>
                     </li>
                 </ul>
-                <div className="buttonRight">
-                    <button type="button" className="buttonToGithub">my GITHUB</button>
+                <div className={styles.buttonRight}>
+                    <button type="button" className={styles.buttonToGithub}>my GITHUB</button>
                 </div>
             </nav>
         </header>

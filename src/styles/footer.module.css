@@ -1,0 +1,36 @@
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(251, 255, 127);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.contactsSectionInFooter {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logoLinkStyle {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.linkStyleMenu {
+    text-decoration: none;
+    color: red;
+    background-color: pink;
+    padding: .8rem;
+    border-radius: 14px;
+    transition: 1s;
+}
+
+.active-link {
+    background-color: aquamarine;
+    color: blue;
+    transition: 1s;
+}
