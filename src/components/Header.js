@@ -24,11 +24,22 @@ const Header = () => {
         <header className={styles.header}>
             <nav className={styles.navigation}>
                 <div className="logoSectionLeft">
-                    <Link to="/" onClick={includeScrollTOTop ? scrollToTop : undefined} className={styles.logoLinkStyle}><img src={logo}/><p>myPATH</p></Link>
+                    <Link to="/" onClick={() => {
+                        setActive("main");
+                        if (includeScrollTOTop) {
+                            scrollToTop();
+                        }}} className={styles.logoLinkStyle}>
+                            <img src={logo}/>
+                            <p>myPATH</p>
+                    </Link>
                 </div>
                 <ul className={styles.menuNavigationCentre}>
                     <li>
-                    <Link to="/aboutMe" className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>About ME</Link>
+                        <Link to="/aboutMe"
+                        onClick={handleAboutMeClick}
+                        className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>
+                            About ME
+                        </Link>
                     </li>
                 </ul>
                 <div className={styles.buttonRight}>

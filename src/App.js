@@ -6,11 +6,13 @@ import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import Main from "./components/Main/Main";
 import About from "./pages/About";
+import ActivePageProvider from "./customHooks/useActivePage";
 
 const App = () => {
 
   return (
     <Router>
+      <ActivePageProvider>
       <React.Fragment>
         <Header />
         {/* <Main /> */}
@@ -20,6 +22,7 @@ const App = () => {
         </Routes>
         <Footer />
       </React.Fragment>
+      </ActivePageProvider>
     </Router>
   );
 }
