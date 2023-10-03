@@ -6,6 +6,7 @@ import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
 import Main from "./components/Main/Main";
 import About from "./pages/About";
+import BlogPostPage from "./pages/BlogPostPage";
 import { ActivePageProvider } from "./customHooks/useActivePage";
 
 const App = () => {
@@ -15,10 +16,10 @@ const App = () => {
       <ActivePageProvider>
       <React.Fragment>
         <Header />
-        {/* <Main /> */}
         <Routes>
           <Route exact path="/" Component={Main} />
           <Route exact path="/aboutMe" Component={About} />
+          <Route exact path="/:id" element={<BlogPostPage />} />
         </Routes>
         <Footer />
       </React.Fragment>
