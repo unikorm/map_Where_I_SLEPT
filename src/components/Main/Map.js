@@ -14,10 +14,10 @@ const PopupContent = ({ content }) => (
 
 const Map = () => {
     const center = [48.825, 19.391]; // Change to your desired center coordinates
-    const zoom = 6 // Adjust the zoom level
+    const zoom = 7 // Adjust the zoom level
 
     return (
-        <MapContainer center={center} zoom={zoom} maxZoom="15" scrollWheelZoom={false} className={styles.mapContainer}>
+        <MapContainer center={center} zoom={zoom} maxZoom="18" scrollWheelZoom={false} className={styles.mapContainer}>
             <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
