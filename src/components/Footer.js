@@ -1,6 +1,6 @@
 
 import styles from "../styles/footer.module.css";
-import logo from "../images/logo.svg";
+import logo from "../images/forest-96.svg";
 import { useActivePage } from "../customHooks/useActivePage";
 
 import { Link } from 'react-router-dom';
@@ -39,7 +39,7 @@ const Footer = () => {
                         <Link to="/aboutMe"
                         onClick={handleAboutMeClick}
                         className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>
-                            About ME
+                            About US
                         </Link>
                     </li>
                 </ul>

@@ -2,7 +2,7 @@
 .header {
     display: flex;
     justify-content: center;
-    background-color: blanchedalmond;
+    background-color: #c5d893;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +12,7 @@
 }
 
 .navigation {
-    padding: .4rem;
+    padding: .7rem;
     width: 100%;
     display: flex;
 }
@@ -32,51 +32,23 @@
     flex-grow: 1;
 }
 
-.buttonToGithub {
-    background-color: aquamarine;
-    border: none;
-    border-radius: 15px;
-    color: blueviolet;
-    padding: 1rem;
-    min-width: 8rem;
-    min-height: 3rem;
-}
-
-.buttonToGithub:hover {
-    background-color: blue;
-    color: blanchedalmond;
-    transition: .9s;
-}
-
-.buttonToGithub:focus {
-    outline-color: transparent;
-    outline-style:solid .9rem #5a01a7;
-    transition: .9s;
-}
-
-.buttonRight {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: right;
-}
-
 .linkStyleMenu {
     text-decoration: none;
-    color: red;
-    background-color: pink;
+    color: #fbfcf6;
+    background-color: #ac5b4d;
     padding: .8rem;
     border-radius: 14px;
     transition: 1s;
 }
 
 .active-link {
-    background-color: aquamarine;
-    color: blue;
+    background-color: #fc9d45;
+    color: #ac5b4d;
     transition: 1s;
 }
 
 .logoLinkStyle {
+    font-family: 'Coming Soon', cursive;    
     text-decoration: none;
     display: flex;
     align-items: center;

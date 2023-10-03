@@ -2,7 +2,7 @@
 footer {
     display: flex;
     justify-content: center;
-    background-color: rgb(251, 255, 127);
+    background-color: #c5d893;
     margin: 2rem;
     padding: 2rem;
     border-radius: 1rem;
@@ -15,6 +15,7 @@ footer {
 }
 
 .logoLinkStyle {
+    font-family: 'Coming Soon', cursive; 
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -22,15 +23,15 @@ footer {
 
 .linkStyleMenu {
     text-decoration: none;
-    color: red;
-    background-color: pink;
+    color: #fbfcf6;
+    background-color: #ac5b4d;
     padding: .8rem;
     border-radius: 14px;
     transition: 1s;
 }
 
 .active-link {
-    background-color: aquamarine;
-    color: blue;
+    background-color: #fc9d45;
+    color: #ac5b4d;
     transition: 1s;
 }

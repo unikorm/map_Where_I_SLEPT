@@ -1,6 +1,6 @@
 
 import styles from "../styles/header.module.css";
-import logo from "../images/logo.svg";
+import logo from "../images/forest-48.svg";
 import { useActivePage } from "../customHooks/useActivePage";
 
 import { Link } from 'react-router-dom';
@@ -38,13 +38,10 @@ const Header = () => {
                         <Link to="/aboutMe"
                         onClick={handleAboutMeClick}
                         className={`${styles.linkStyleMenu} ${isAnotherPageActive ? styles["active-link"] : ""}`}>
-                            About ME
+                            About US
                         </Link>
                     </li>
                 </ul>
-                <div className={styles.buttonRight}>
-                    <button type="button" className={styles.buttonToGithub}>my GITHUB</button>
-                </div>
             </nav>
         </header>
     );
