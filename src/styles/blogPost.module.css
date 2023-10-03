@@ -15,8 +15,7 @@
     box-shadow:  0px 3px 3px rgba(0, 0, 0, 0.294); /* Add a subtle shadow on hover */
 }
 
-.postCoverImage {
-    
+.postCoverImage { 
     max-width: 100%;
     border-radius: 1rem;
 }

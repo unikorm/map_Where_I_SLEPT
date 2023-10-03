@@ -1,6 +1,7 @@
 
 import styles from "../../styles/map.module.css";
 import blogData from "../../blogData.json";
+import postCover from "../../images/postCover.webp";
 
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -27,7 +28,19 @@ const Map = () => {
                 marker.position && marker.position.length === 2 ? (
                     <Marker key={marker.id} position={marker.position}>
                         <Popup>
-                            <PopupContent content={marker.title}/>
+                            <section className={styles.popUpBox}>
+                                <img src={postCover} alt="post image" className={styles.postCoverImage}/>
+                                <article>
+                                    <aside className={styles.popUpMain}>
+                                        <PopupContent content={marker.title}/>
+                                        <PopupContent content={marker.place}/>
+                                    </aside>
+                                    <aside className={styles.popUpInfo}>
+                                        <PopupContent content={marker.date}/>
+                                        <PopupContent content={marker.how}/>
+                                    </aside>
+                                </article>
+                            </section>
                         </Popup>
                     </Marker>
                 ) : null

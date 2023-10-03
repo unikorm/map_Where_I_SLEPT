@@ -8,3 +8,30 @@
     border-radius: 20px;
     border-style: none;
 }
+
+.popUpBox p {
+    margin: 0;
+}
+ 
+.popUpBox {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+}
+
+.popUpMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.popUpInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: .4rem;
+    text-align: center;
+}
+
+.postCoverImage {
+    max-width: 100%;
+    border-radius: 1rem;
+}
