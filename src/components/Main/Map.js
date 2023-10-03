@@ -1,12 +1,12 @@
 
 import styles from "../../styles/map.module.css";
-import { markers } from "../../positions.js";
+import blogData from "../../blogData.json";
 
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const PopupContent = ({ content }) => (
-  <div dangerouslySetInnerHTML={{ __html: content }} />
+  <p dangerouslySetInnerHTML={{ __html: content }} />
 );
 
 
@@ -15,6 +15,7 @@ const PopupContent = ({ content }) => (
 const Map = () => {
     const center = [48.825, 19.391]; // Change to your desired center coordinates
     const zoom = 7 // Adjust the zoom level
+    const data = blogData.posts;
 
     return (
         <MapContainer center={center} zoom={zoom} maxZoom="18" scrollWheelZoom={false} className={styles.mapContainer}>
@@ -22,12 +23,14 @@ const Map = () => {
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {markers.map((marker, index) => (
-                <Marker key={index} position={marker.position}>
-                    <Popup>
-                        <PopupContent content={marker.text}/>
-                    </Popup>
-                </Marker>
+            {data.map(( marker ) => (
+                marker.position && marker.position.length === 2 ? (
+                    <Marker key={marker.id} position={marker.position}>
+                        <Popup>
+                            <PopupContent content={marker.title}/>
+                        </Popup>
+                    </Marker>
+                ) : null
             ))}
         </MapContainer>
     );

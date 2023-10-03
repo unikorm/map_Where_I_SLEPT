@@ -5,6 +5,7 @@
         "id": 1,
         "title": "Pri nemocnici",
         "place": "Lasnitzhone, Graz",
+        "position": [47.076496, 15.577760],
         "date": "2023-04-7",
         "how": "car",
         "description": "Toto miesto bolo z núdze vybrané, už bolo neskoro a báli sme sa o auto, takže sme to odstavili pri nemocnici alebo starobinci, neviem čo to bolo a vyspali sa na predných stoličkách.",
@@ -15,31 +16,56 @@
         "id": 2,
         "title": "Sexamples",
         "place": "places",
-        "date": "2023-09-30"
+        "position": "",
+        "date": "2023-09-30",
+        "how": "",
+        "description": "",
+        "content": "",
+        "info": ""
       },
       {
         "id": 3,
-        "title": "examples",
+        "title": "Sexamples",
         "place": "places",
-        "date": "2023-10-01"
+        "position": "",
+        "date": "2023-09-30",
+        "how": "",
+        "description": "",
+        "content": "",
+        "info": ""
       },
       {
         "id": 4,
-        "title": "examples",
+        "title": "Sexamples",
         "place": "places",
-        "date": "2023-09-29"
+        "position": "",
+        "date": "2023-09-30",
+        "how": "",
+        "description": "",
+        "content": "",
+        "info": ""
       },
       {
         "id": 5,
         "title": "Sexamples",
         "place": "places",
-        "date": "2023-09-30"
+        "position": "",
+        "date": "2023-09-30",
+        "how": "",
+        "description": "",
+        "content": "",
+        "info": ""
       },
       {
         "id": 6,
-        "title": "examples",
+        "title": "Sexamples",
         "place": "places",
-        "date": "2023-10-01"
+        "position": "",
+        "date": "2023-09-30",
+        "how": "",
+        "description": "",
+        "content": "",
+        "info": ""
       }
     ]
   }
