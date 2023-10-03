@@ -23,7 +23,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <nav className={styles.navigation}>
-                <div className="logoSectionLeft">
+                <div className={styles.logoSectionLeft}>
                     <Link to="/" onClick={() => {
                         setActive("main");
                         if (includeScrollTOTop) {

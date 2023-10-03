@@ -20,7 +20,7 @@
 .menuNavigationCentre {
     list-style-type: none;
     padding: 0;
-    margin: auto 1rem;
+    margin: auto .4rem;
     display: flex;
     justify-content: right;
     flex-grow: 4;
