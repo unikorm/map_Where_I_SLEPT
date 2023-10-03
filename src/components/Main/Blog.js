@@ -10,10 +10,10 @@ const Blog = () => {
         <section className={styles.blogSection}>
             <h3>O miestach kde som spal</h3>
             <section className={styles.postsTable}>
-                {
-                posts.map(( post ) => (
+                {posts.map(( post ) => (
+                    post.id <= 12 && (
                     <BlogPost key={post.id} post={post} />
-                ))
+                    )))
                 }
             </section>
         </section>
