@@ -38,6 +38,7 @@ const Map = () => {
                                     <aside className={styles.popUpInfo}>
                                         <PopupContent content={marker.date}/>
                                         <PopupContent content={marker.how}/>
+                                        <PopupContent content={marker.id}/>
                                     </aside>
                                 </article>
                             </section>
