@@ -14,7 +14,7 @@ const Blog = () => {
             <section className={styles.postsTable}>
                 {posts.map(( post ) => (
                     post.id <= 12 && (
-                        <Link to={`/${post.id}`} key={post.id}>
+                        <Link to={`/${post.id}`} key={post.id} className={styles.postBox}>
                             <BlogPost post={post} />
                         </Link>
                     )))

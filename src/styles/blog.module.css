@@ -11,3 +11,7 @@
     grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
     gap: 1rem;
 }
+
+.postBox {
+    margin-top: 1rem;
+}
