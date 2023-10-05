@@ -13,13 +13,19 @@ const BlogPost = ({ post }) => {
                 <p>{post.place}</p>
             </section>
             <aside className={styles.postUnitInfo}>
-                <div className={`${styles.postUnitInfoSection} ${styles.date}`}>
+                <div className={styles.postUnitInfoSection}>
                     <img src={dateLogo} alt="logo kalendaru pre datum kedy" />
-                    <p>{post.date}</p>
+                    <div className={styles.sectionWhen}>
+                        <p>Kedy</p>
+                        <p>{post.date}</p>
+                    </div>
                 </div>
-                <div className={`${styles.postUnitInfoSection} ${styles.how}`}>
+                <div className={styles.postUnitInfoSection}>
                     <img src={placeLogo} alt="logo pre sposob spania"/>
-                    <p>{post.how}</p>
+                    <div className={styles.sectionHow}>
+                        <p>Ako</p>
+                        <p>{post.how}</p>
+                    </div>
                 </div>
             </aside>
         </article>

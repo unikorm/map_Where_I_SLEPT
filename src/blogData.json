@@ -36,7 +36,7 @@
       },
       {
         "id": 4,
-        "title": "jazero Bled",
+        "title": "Jazero Bled",
         "place": "Bled",
         "position": [46.36826739049281, 14.084859889952476],
         "date": "2023-04-07",
@@ -47,7 +47,7 @@
       },
       {
         "id": 5,
-        "title": "pri pláži",
+        "title": "Pri pláži",
         "place": "Marina Julia",
         "position": [45.77317382364392, 13.527147980410941],
         "date": "2023-08-26",
@@ -69,7 +69,7 @@
       },
       {
         "id": 7,
-        "title": "v divočine",
+        "title": "V divočine",
         "place": "Veľká Fatra",
         "position": [48.883877008772174, 19.037511179589945],
         "date": "2020-05-09",
@@ -80,7 +80,7 @@
       },
       {
         "id": 8,
-        "title": "naše miesto",
+        "title": "Naše miesto NO.1",
         "place": "Bytča",
         "position": [49.22502905545203, 18.600451264633065],
         "date": "2023-06-17",
@@ -91,7 +91,7 @@
       },
       {
         "id": 9,
-        "title": "čakanie na Princeznú",
+        "title": "Čakanie na Princeznú",
         "place": "Medyka",
         "position": [49.810050395192754, 22.92894662326159],
         "date": "2023-06-03",
@@ -102,7 +102,7 @@
       },
       {
         "id": 10,
-        "title": "pri osade",
+        "title": "Pri osade",
         "place": "Batizovce",
         "position": [49.06848188665821, 20.181001523783106],
         "date": "2023-05-13",
@@ -113,7 +113,7 @@
       },
       {
         "id": 11,
-        "title": "na smetisku",
+        "title": "Na smetisku",
         "place": "Brezno",
         "position": [48.78719580932526, 19.674230401368504],
         "date": "2023-05-12",
@@ -124,7 +124,7 @@
       },
       {
         "id": 12,
-        "title": "cestou do Nemecka",
+        "title": "Cestou do Nemecka",
         "place": "Sekule",
         "position": [48.59856118011399, 16.99023521662268],
         "date": "2023-05-05",
@@ -135,7 +135,7 @@
       },
       {
         "id": 13,
-        "title": "na poli",
+        "title": "Na poli",
         "place": "Smrdáky",
         "position": [48.72979894357196, 17.315345515355283],
         "date": "2023-07-21",
@@ -146,7 +146,7 @@
       },
       {
         "id": 14,
-        "title": "v útulňi",
+        "title": "V útulňi",
         "place": "Nízke Tatry",
         "position": [48.93102639810386, 19.466836133523074],
         "date": "2020-08-19",
@@ -157,7 +157,7 @@
       },
       {
         "id": 15,
-        "title": "na rybníku",
+        "title": "Naše miesto NO.2",
         "place": "Jazernica",
         "position": [48.91501903737097, 18.83001838868011],
         "date": "2023-07-29",
@@ -190,7 +190,7 @@
       },
       {
         "id": 18,
-        "title": "na skale",
+        "title": "Na skale",
         "place": "Súľov",
         "position": [49.1846418, 18.6088486],
         "date": "2020-08-01",
@@ -201,7 +201,7 @@
       },
       {
         "id": 19,
-        "title": "na Martinkách",
+        "title": "Na Martinkách",
         "place": "Martinky",
         "position": [49.09636555764108, 18.82424932940958],
         "date": "2020-05-16",
@@ -212,7 +212,7 @@
       },
       {
         "id": 20,
-        "title": "na štrkovisku",
+        "title": "Na štrkovisku",
         "place": "Dvory nad Žitavou",
         "position": [47.998593911346084, 18.242012607391825],
         "date": "2023-09-15",
@@ -234,7 +234,7 @@
       },
       {
         "id": 22,
-        "title": "prvá spoločná dovolenka",
+        "title": "Prvá spoločná dovolenka",
         "place": "Barcelona",
         "position": [41.41400743393357, 2.227253805832463],
         "date": "2022-09-12",
@@ -267,7 +267,7 @@
       },
       {
         "id": 25,
-        "title": "na Orave",
+        "title": "Na pláži na VD Orava",
         "place": "Bobrov",
         "position": [49.410408443556534, 19.53330448313396],
         "date": "2022-08-26",
@@ -278,7 +278,7 @@
       },
       {
         "id": 26,
-        "title": "v kempe",
+        "title": "V kempe",
         "place": "Prístav",
         "position": [49.38652875845735, 19.529179244619275],
         "date": "2023-07-23",
