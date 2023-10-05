@@ -3,6 +3,7 @@ import styles from "../../styles/blogPost.module.css";
 import postCover from "../../images/postCoverTwo.webp";
 import dateLogo from "../../images/calendar-24.png";
 import placeLogo from "../../images/bed-20.png";
+import likenessLogo from "../../images/stars-24.png";
 
 const formatDate = (dateString) => {
     const options = { year: "numeric", month: "numeric", day: "numeric" };
@@ -11,11 +12,12 @@ const formatDate = (dateString) => {
 
 const BlogPost = ({ post }) => {
     const formattedDate = formatDate(post.date);
+    const imagePath = post.imagePath || postCover;
     
 
     return (
         <article className={styles.postUnit}>
-            <img src={postCover} alt="post image" className={styles.postCoverImage}/>
+            <img src={`${imagePath}`} alt="post image" className={styles.postCoverImage}/>
             <section className={styles.postUnitTitle}>
                 <h3>{post.title}</h3>
                 <p>{post.place}</p>
@@ -29,10 +31,17 @@ const BlogPost = ({ post }) => {
                     </div>
                 </div>
                 <div className={styles.postUnitInfoSection}>
-                    <img src={placeLogo} alt="logo pre sposob spania"/>
+                    <img src={likenessLogo} alt="logo pre hodnotenie miesta" /> 
                     <div className={styles.sectionHow}>
                         <p>How</p>
                         <p>{post.how}</p>
+                    </div>
+                </div>
+                <div className={styles.postUnitInfoSection}>
+                    <img src={placeLogo} alt="logo pre sposob spania"/>
+                    <div className={styles.sectionIn}>
+                        <p>In</p>
+                        <p>{post.in}</p>
                     </div>
                 </div>
             </aside>

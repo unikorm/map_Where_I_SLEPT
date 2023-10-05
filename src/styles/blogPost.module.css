@@ -74,7 +74,8 @@
 }
 
 .sectionWhen p:first-of-type,
-.sectionHow p:first-of-type {
+.sectionHow p:first-of-type,
+.sectionIn p:first-of-type {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.5);
     font-size: .9rem;
@@ -82,7 +83,8 @@
 }
 
 .sectionWhen p:nth-child(2),
-.sectionHow p:nth-child(2) {
+.sectionHow p:nth-child(2),
+.sectionIn p:nth-child(2) {
     font-weight: 500;
     color: black;
     font-size: .9rem;
@@ -90,6 +92,7 @@
 }
 
 .sectionWhen,
-.sectionHow {
+.sectionHow,
+.sectionIn {
     margin: 0 0 0 .4rem;
 }

@@ -6,9 +6,10 @@
         "title": "Pri nemocnici",
         "place": "Lasnitzhone, Graz",
         "position": [47.076496, 15.577760],
-        "imagePath": "../../images/postCoverTwo.webp",
+        "imagePath": "../../images/postCoverTwo",
         "date": "2023-04-7",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "Toto miesto bolo z núdze vybrané, už bolo neskoro a báli sme sa o auto, takže sme to odstavili pri nemocnici alebo starobinci, neviem čo to bolo a vyspali sa na predných stoličkách.",
         "content": "tu bude dlhy text, opis a take srandy o tom mieste a kontext...",
         "info": "tu budu prakticke info o mieste a tak podobne"
@@ -20,7 +21,8 @@
         "position": [48.084935, 17.139982],
         "imagePath": "",
         "date": "2023-08-25",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -32,7 +34,8 @@
         "position": [48.707455, 14.927590],
         "imagePath": "",
         "date": "2023-05-07",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -44,7 +47,8 @@
         "position": [46.36826739049281, 14.084859889952476],
         "imagePath": "",
         "date": "2023-04-07",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -56,7 +60,8 @@
         "position": [45.77317382364392, 13.527147980410941],
         "imagePath": "",
         "date": "2023-08-26",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -68,7 +73,8 @@
         "position": [48.46852769912247, 18.882837500699537],
         "imagePath": "",
         "date": "2023-07-22",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -80,7 +86,8 @@
         "position": [48.883877008772174, 19.037511179589945],
         "imagePath": "",
         "date": "2020-05-09",
-        "how": "sleeping bag",
+        "how": "epic",
+        "in": "sleeping bag",
         "description": "",
         "content": "",
         "info": ""
@@ -92,7 +99,8 @@
         "position": [49.22502905545203, 18.600451264633065],
         "imagePath": "",
         "date": "2023-06-17",
-        "how": "tent",
+        "how": "epic",
+        "in": "tent",
         "description": "",
         "content": "",
         "info": ""
@@ -104,7 +112,8 @@
         "position": [49.810050395192754, 22.92894662326159],
         "imagePath": "",
         "date": "2023-06-03",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -116,7 +125,8 @@
         "position": [49.06848188665821, 20.181001523783106],
         "imagePath": "",
         "date": "2023-05-13",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -128,7 +138,8 @@
         "position": [48.78719580932526, 19.674230401368504],
         "imagePath": "",
         "date": "2023-05-12",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -140,7 +151,8 @@
         "position": [48.59856118011399, 16.99023521662268],
         "imagePath": "",
         "date": "2023-05-05",
-        "how": "car",
+        "how": "epic",
+        "in": "car",
         "description": "",
         "content": "",
         "info": ""
@@ -152,7 +164,8 @@
         "position": [48.72979894357196, 17.315345515355283],
         "imagePath": "",
         "date": "2023-07-21",
-        "how": "tent",
+        "how": "epic",
+        "in": "tent",
         "description": "",
         "content": "",
         "info": ""
@@ -164,7 +177,8 @@
         "position": [48.93102639810386, 19.466836133523074],
         "imagePath": "",
         "date": "2020-08-19",
-        "how": "útulňa",
+        "how": "epic",
+        "in": "útulňa",
         "description": "",
         "content": "",
         "info": ""
@@ -176,7 +190,8 @@
         "position": [48.91501903737097, 18.83001838868011],
         "imagePath": "",
         "date": "2023-07-29",
-        "how": "tent",
+        "how": "epic",
+        "in": "tent",
         "description": "",
         "content": "",
         "info": ""
@@ -188,7 +203,8 @@
         "position": [49.1399084628338, 18.50539748303334],
         "imagePath": "",
         "date": "2020-07-31",
-        "how": "sleeping bag",
+        "how": "epic",
+        "in": "sleeping bag",
         "description": "",
         "content": "",
         "info": ""
@@ -200,7 +216,8 @@
         "position": [48.93939222818958, 18.325966527386917],
         "imagePath": "",
         "date": "2020-04-24",
-        "how": "sleeping bag",
+        "how": "epic",
+        "in": "sleeping bag",
         "description": "",
         "content": "",
         "info": ""
@@ -212,7 +229,8 @@
         "position": [49.1846418, 18.6088486],
         "imagePath": "",
         "date": "2020-08-01",
-        "how": "sleeping bag",
+        "how": "epic",
+        "in": "sleeping bag",
         "description": "",
         "content": "",
         "info": ""
@@ -224,7 +242,8 @@
         "position": [49.09636555764108, 18.82424932940958],
         "imagePath": "",
         "date": "2020-05-16",
-        "how": "sleeping bag",
+        "how": "epic",
+        "in": "sleeping bag",
         "description": "",
         "content": "",
         "info": ""
@@ -236,7 +255,8 @@
         "position": [47.998593911346084, 18.242012607391825],
         "imagePath": "",
         "date": "2023-09-15",
-        "how": "tent",
+        "how": "epic",
+        "in": "tent",
         "description": "",
         "content": "",
         "info": ""
@@ -248,7 +268,8 @@
         "position": [59.94084029323905, 10.788792595575895],
         "imagePath": "",
         "date": "2023-02-18",
-        "how": "hotel",
+        "how": "epic",
+        "in": "hotel",
         "description": "",
         "content": "",
         "info": ""
@@ -260,7 +281,8 @@
         "position": [41.41400743393357, 2.227253805832463],
         "imagePath": "",
         "date": "2022-09-12",
-        "how": "boat",
+        "how": "epic",
+        "in": "boat",
         "description": "",
         "content": "",
         "info": ""
@@ -272,7 +294,8 @@
         "position": [45.69819958026667, 9.66728671396722],
         "imagePath": "",
         "date": "2023-01-28",
-        "how": "hotel",
+        "how": "epic",
+        "in": "hotel",
         "description": "",
         "content": "",
         "info": ""
@@ -284,7 +307,8 @@
         "position": [50.58459631186754, 15.15657130047919],
         "imagePath": "",
         "date": "2023-04-15",
-        "how": "hotel",
+        "how": "epic",
+        "in": "hotel",
         "description": "",
         "content": "",
         "info": ""
@@ -296,7 +320,8 @@
         "position": [49.410408443556534, 19.53330448313396],
         "imagePath": "",
         "date": "2022-08-26",
-        "how": "sleeping bag",
+        "how": "epic",
+        "in": "sleeping bag",
         "description": "",
         "content": "",
         "info": ""
@@ -308,7 +333,8 @@
         "position": [49.38652875845735, 19.529179244619275],
         "imagePath": "",
         "date": "2023-07-23",
-        "how": "tent",
+        "how": "epic",
+        "in": "tent",
         "description": "",
         "content": "",
         "info": ""
@@ -320,7 +346,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -332,7 +359,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -344,7 +372,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -356,7 +385,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -368,7 +398,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -380,7 +411,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -392,7 +424,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -404,7 +437,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -416,7 +450,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -428,7 +463,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -440,7 +476,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -452,7 +489,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -464,7 +502,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -476,7 +515,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
@@ -488,7 +528,8 @@
         "position": [],
         "imagePath": "",
         "date": "2023-09-30",
-        "how": "",
+        "how": "epic",
+        "in": "",
         "description": "",
         "content": "",
         "info": ""
