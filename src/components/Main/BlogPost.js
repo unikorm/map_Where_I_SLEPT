@@ -11,6 +11,7 @@ const formatDate = (dateString) => {
 
 const BlogPost = ({ post }) => {
     const formattedDate = formatDate(post.date);
+    
 
     return (
         <article className={styles.postUnit}>
