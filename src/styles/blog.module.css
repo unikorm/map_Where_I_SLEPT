@@ -6,6 +6,14 @@
     /* text-align: center; */
 }
 
+.h3 {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    padding: 2.25rem 0 0;
+    border-top: rgba(0, 0, 0, 0.05) solid;
+    font-size: 1.5rem;
+}
+
 .postsTable {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));

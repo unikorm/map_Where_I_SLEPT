@@ -1,6 +1,6 @@
 
 import styles from "../../styles/blogPost.module.css";
-import postCover from "../../images/postCoverTwo.webp";
+import postCover from "../../images/default.webp";
 import dateLogo from "../../images/calendar-24.png";
 import placeLogo from "../../images/bed-20.png";
 import likenessLogo from "../../images/stars-24.png";
@@ -12,12 +12,12 @@ const formatDate = (dateString) => {
 
 const BlogPost = ({ post }) => {
     const formattedDate = formatDate(post.date);
-    const imagePath = post.imagePath || postCover;
+    const imagePath = process.env.PUBLIC_URL + post.imagePath || postCover;
     
 
     return (
         <article className={styles.postUnit}>
-            <img src={process.env.PUBLIC_URL + imagePath} alt="post image" className={styles.postCoverImage}/>
+            <img src={imagePath} alt="post image" className={styles.postCoverImage}/>
             <section className={styles.postUnitTitle}>
                 <h3>{post.title}</h3>
                 <p>{post.place}</p>

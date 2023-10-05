@@ -10,7 +10,7 @@ const Blog = () => {
 
     return (
         <section className={styles.blogSection}>
-            <h3>O miestach kde som spal</h3>
+            <h3 className={styles.h3}>More about places where I slept</h3>
             <section className={styles.postsTable}>
                 {posts.map(( post ) => (
                     post.id <= 12 && (
