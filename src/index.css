@@ -3,6 +3,7 @@ html, body {
     font-family: 'Shantell Sans', cursive;
     margin: 0;
     display: flex;
+    width: 100%;
 
     background-color: #fbfcf6;
 }

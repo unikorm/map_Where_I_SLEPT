@@ -10,7 +10,8 @@ const Blog = () => {
 
     return (
         <section className={styles.blogSection}>
-            <h3 className={styles.h3}>More about places where I slept</h3>
+            <h3 className={styles.h3}>More about places where I/We slept</h3>
+            <div className={styles.postsTableContainer}></div>
             <section className={styles.postsTable}>
                 {posts.map(( post ) => (
                     post.id <= 12 && (
@@ -20,6 +21,7 @@ const Blog = () => {
                     )))
                 }
             </section>
+            <div/>
         </section>
     );
 }
