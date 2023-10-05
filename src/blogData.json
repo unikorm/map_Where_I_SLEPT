@@ -6,7 +6,7 @@
         "title": "Pri nemocnici",
         "place": "Lasnitzhone, Graz",
         "position": [47.076496, 15.577760],
-        "imagePath": "../../images/postCoverTwo",
+        "imagePath": "/images/postCover.webp",
         "date": "2023-04-7",
         "how": "epic",
         "in": "car",

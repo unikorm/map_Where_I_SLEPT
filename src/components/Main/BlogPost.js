@@ -17,7 +17,7 @@ const BlogPost = ({ post }) => {
 
     return (
         <article className={styles.postUnit}>
-            <img src={`${imagePath}`} alt="post image" className={styles.postCoverImage}/>
+            <img src={process.env.PUBLIC_URL + imagePath} alt="post image" className={styles.postCoverImage}/>
             <section className={styles.postUnitTitle}>
                 <h3>{post.title}</h3>
                 <p>{post.place}</p>
