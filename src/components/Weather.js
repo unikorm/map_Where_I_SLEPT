@@ -6,21 +6,43 @@ import { useEffect, useState } from "react";
 const Weather = ({ place }) => {
     const [weatherData, setWeatherData] = useState(null);
     const apiKey = apiKeyPrivate;
-    const position = place
-    const lat = position[0];
-    const lon = position[1];
+    
 
     useEffect(() => {
-        if(!position || position.length !== 2) {
+        if(!place || place.length !== 2) {
             return;
         };
 
+        const [lat, lon] = place;
+
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)
+            .then((response) => {
+                if(!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setWeatherData(data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
 
     }, [place, apiKey]);
 
     return (
-
+        <section>
+            {weatherData ? (
+                <article>
+                    <h2>Weather at Latitude: {place[0]}, Longitude: {place[1]}</h2>
+                    <p>Temperature: {weatherData.main.temp}°C</p>
+                    <p>Conditions: {weatherData.weather[0].description}</p>
+                </article>
+            ) : (
+                <p>Loading weather data...</p>
+            )}
+        </section>
     );
 };
 
