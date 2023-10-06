@@ -3,14 +3,16 @@ import { apiKeyPrivate} from "../apikey";
 
 import { useEffect, useState } from "react";
 
-const Weather = ({ place }) => {
+const Weather = ({ place, city }) => {
     const [weatherData, setWeatherData] = useState(null);
     const apiKey = apiKeyPrivate;
     
 
     useEffect(() => {
         if(!place || place.length !== 2) {
-            return;
+            return (
+                <p>When you modify place constant...</p>
+            );
         };
 
         const [lat, lon] = place;
@@ -35,7 +37,7 @@ const Weather = ({ place }) => {
         <section>
             {weatherData ? (
                 <article>
-                    <h2>Weather at Latitude: {place[0]}, Longitude: {place[1]}</h2>
+                    <h2>Weather at: {city}</h2>
                     <p>Temperature: {weatherData.main.temp}°C</p>
                     <p>Conditions: {weatherData.weather[0].description}</p>
                 </article>

@@ -37,7 +37,7 @@ const BlogPostPage = () => {
         </div>
         <aside>
           <div>
-            <Weather place={post.position}/>
+            <Weather place={post.position} city={post.place}/>
           </div>
           <div>
             {/* here will be box with people who been there */}
