@@ -7,6 +7,8 @@
     overflow: hidden;
     border-radius: 20px;
     border-style: none;
+    max-width: 1400px;
+    width: 100%;
 }
 
 .popUpBox p {
