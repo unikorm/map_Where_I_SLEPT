@@ -3,10 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
-    /* justify-content: center; */
     align-items: center;
-    /* max-width: 900px; */
-    /* margin: 0 auto; */
 }
 
 .h3 {
@@ -36,11 +33,6 @@
 
 @media screen and (min-width: 1275px) {
     .postsTable {
-        /* display: grid; */
-        /* grid-template-columns: repeat(auto-fill, minmax(360px, 2fr)); */
-        /* gap: 1rem; */
         max-width: 1275px;
-        /* width: 100%; */
-        /* justify-content: center; */
     }
 }
