@@ -21,17 +21,30 @@ const BlogPostPage = () => {
         <img src={mainImagePath} className={styles.mainImage} />
       </div>
       <section className={styles.mainSection}>
-        <article>
-          <h1>{post.title}</h1>
-          <p>{post.place}</p>
-          <p>{post.date}</p>
-          <p>{post.how}</p>
-        </article>
-        <article>
-          <p>{post.description}</p>
-          <p>{post.content}</p>
-          <p>{post.info}</p>
-        </article>
+        <div>
+          <article>
+            <h1>{post.title}</h1>
+            <p>{post.place}</p>
+            <p>{post.date}</p>
+            <p>{post.how}</p>
+          </article>
+          <article>
+            <p>{post.description}</p>
+            <p>{post.content}</p>
+            <p>{post.info}</p>
+          </article>
+        </div>
+        <aside>
+          <div>
+            {/* here will be weather */}
+          </div>
+          <div>
+            {/* here will be box with people who been there */}
+          </div>
+        </aside>
+        <section>
+          {/* here will be map with detail on that place */}
+        </section>
       </section>
     </section>
   );
