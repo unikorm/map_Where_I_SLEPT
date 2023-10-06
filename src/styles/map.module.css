@@ -1,13 +1,13 @@
 
 .mapContainer {
     width: 96%; /* 95 */
-    height: 685px;  /* 600 */ 
+    height: 500px;  /* 600 */ 
     border: 2px solid #ccc; 
     margin: 1rem auto 1rem;
     overflow: hidden;
     border-radius: 20px;
     border-style: none;
-    max-width: 1400px;
+    max-width: 1300px;
     width: 100%;
 }
 
@@ -36,4 +36,19 @@
 .postCoverImage {
     max-width: 100%;
     border-radius: 1rem;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .mapContainer {
+        height: 625px;
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    .mapContainer {
+        height: 675px;
+    }
 }
