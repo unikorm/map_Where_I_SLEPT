@@ -2,6 +2,7 @@
 import blogData from "../blogData.json";
 import styles from "../styles/blogPostPage.module.css";
 import postCover from "../images/default.webp";
+import Weather from "../components/Weather";
 
 import React from "react";
 import { useParams } from "react-router-dom";
@@ -36,7 +37,7 @@ const BlogPostPage = () => {
         </div>
         <aside>
           <div>
-            {/* here will be weather */}
+            <Weather place={post.city}/>
           </div>
           <div>
             {/* here will be box with people who been there */}
