@@ -27,7 +27,20 @@ const BlogPostPage = () => {
             <h1>{post.title}</h1>
             <p>{post.place}</p>
             <p>{post.date}</p>
-            <p>{post.how}</p>
+            <div className={styles}>
+              <img src={likenessLogo} alt="logo pre hodnotenie miesta" /> 
+              <div className={styles}>
+                <p>How</p>
+                <p>{post.how}</p>
+              </div>
+            </div>
+            <div className={styles}>
+              <img src={placeLogo} alt="logo pre sposob spania"/>
+              <div className={styles}>
+                <p>In</p>
+                <p>{post.in}</p>
+              </div>
+            </div>
           </article>
           <article>
             <p>{post.description}</p>
