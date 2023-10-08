@@ -11,7 +11,7 @@
     justify-content: center;
     align-self: center;
 
-    background-image: url(../../public/images/bled.webp);
+    /* background-image: url(../../public/images/bled.webp); */
     width: 100%;
     max-width: 1300px;
     height: 650px;

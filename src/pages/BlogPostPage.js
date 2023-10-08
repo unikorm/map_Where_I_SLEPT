@@ -27,10 +27,7 @@ const BlogPostPage = () => {
 
   return (
     <section className={styles.blogPostPage}>
-      <div className={styles.divImage}>
-        {/* <img src={mainImagePath} className={styles.mainImage} /> */}
-
-    
+      <div className={styles.divImage} style={{backgroundImage: `url(${mainImagePath})`}}>
           <aside>
             <section className={styles}>
               <h3>{post.title}</h3>
@@ -58,10 +55,7 @@ const BlogPostPage = () => {
                     </div>
             </div>
           </aside>
-
       </div>
-
-            
 
       <section className={styles.mainSection}>
         <section>
@@ -70,15 +64,17 @@ const BlogPostPage = () => {
             <p>{post.content}</p>
             <p>{post.info}</p>
           </article>
-        </section>
-        <aside>
-          <div>
-            <Weather place={post.position} city={post.place}/>
-          </div>
-          <div>
-            {/* here will be box with people who been there */}
-          </div>
+
+          <aside>
+            <div>
+              <Weather place={post.position} city={post.place}/>
+            </div>
+            <div>
+              {/* here will be box with people who been there */}
+            </div>
         </aside>
+        </section>
+
         <section>
           {/* here will be map with detail on that place */}
         </section>
