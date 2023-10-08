@@ -28,36 +28,40 @@ const BlogPostPage = () => {
   return (
     <section className={styles.blogPostPage}>
       <div className={styles.divImage}>
-            <img src={mainImagePath} className={styles.mainImage} alt="Background Image" />
+        {/* <img src={mainImagePath} className={styles.mainImage} /> */}
+
+    
+          <aside>
             <section className={styles}>
-                <h3>{post.title}</h3>
-                <p>{post.place}</p>
+              <h3>{post.title}</h3>
+              <p>{post.place}</p>
             </section>
-            <aside>
-                <div className={styles}>
+            <div className={styles}>
                     <img src={dateLogo} alt="logo kalendaru pre datum kedy" />
                     <div className={styles}>
                         <p>When</p>
                         <p>{formattedDate}</p>
                     </div>
-                </div>
-                <div className={styles}>
+            </div>
+            <div className={styles}>
                     <img src={likenessLogo} alt="logo pre hodnotenie miesta" />
                     <div className={styles}>
                         <p>How</p>
                         <p>{post.how}</p>
                     </div>
-                </div>
-                <div className={styles}>
+            </div>
+            <div className={styles}>
                     <img src={placeLogo} alt="logo pre sposob spania" />
                     <div className={styles}>
                         <p>In</p>
                         <p>{post.in}</p>
                     </div>
-                </div>
-            </aside>
+            </div>
+          </aside>
+
       </div>
 
+            
 
       <section className={styles.mainSection}>
         <section>

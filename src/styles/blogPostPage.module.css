@@ -9,10 +9,20 @@
 .divImage {
     display: flex;
     justify-content: center;
+    align-self: center;
+
+    background-image: url(../../public/images/bled.webp);
+    width: 100%;
+    max-width: 1300px;
+    height: 650px;
+    /* object-fit: cover; */
+    background-size: cover;
+    /* object-position: center center; */
+    background-position: center center;
+    border-radius: 1rem;
 }
 
 .mainImage {
-    display: flex;
     width: 100%;
     max-width: 1300px;
     height: 650px;
@@ -44,13 +54,13 @@
         padding: 0 1rem;
     }
 
-    .mainImage {
+    .divImage {
         height: 850px;
     }
 }
 
 @media screen and (min-width: 1250px) {
-    .mainImage {
+    .divImage {
         height: 690px;
     }
 }
