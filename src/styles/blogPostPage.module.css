@@ -38,9 +38,18 @@
     padding: 0 1rem;
 }
 
-.mainSection article {
-    width: 100%;
-    max-width: 1300px;
+.mainSectionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    flex-grow: 1;
+}
+
+.aside {
+    flex: 1;
 }
 
 
@@ -52,6 +61,18 @@
 @media screen and (min-width: 780px) {
     .blogPostPage {
         padding: 0 1rem;
+    }
+
+    .mainSectionContainer {
+        flex-wrap: nowrap;
+    }
+
+    .article {
+        flex: 3;
+    }
+    
+    .aside {
+        flex: 1;
     }
 
     .divImage {

@@ -58,21 +58,21 @@ const BlogPostPage = () => {
       </div>
 
       <section className={styles.mainSection}>
-        <section>
-          <article>
+        <section className={styles.mainSectionContainer}>
+          <article className={styles.article}>
             <p>{post.description}</p>
             <p>{post.content}</p>
             <p>{post.info}</p>
           </article>
 
-          <aside>
+          <aside className={styles.aside}>
             <div>
               <Weather place={post.position} city={post.place}/>
             </div>
             <div>
               {/* here will be box with people who been there */}
             </div>
-        </aside>
+          </aside>
         </section>
 
         <section>
