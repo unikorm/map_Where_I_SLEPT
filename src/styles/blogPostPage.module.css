@@ -55,7 +55,7 @@
 }
 
 .article p:first-of-type {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-top: 1.2rem;
     line-height: 1.9rem;
 }
@@ -70,29 +70,6 @@
     font-weight: 300;
 }
 
-.popUpInfo {
-    background: #e68b0b67;
-    border-radius: 1rem;
-    padding: 1rem;
-}
-
-.popUpTitle {
-    margin: .75rem 0 0;
-    padding-bottom: .4rem;
-    border-bottom: rgba(0, 0, 0, 0.05) solid;
-    display: flex;
-    justify-content: space-between;
-}
-
-.popUpTitle p {
-    margin: 0 !important;
-    font-size: 1.4rem;
-}
-
-.popUpTitle img {
-    margin-right: .2rem;
-    transform: rotate(90deg);
-}
 
 
 

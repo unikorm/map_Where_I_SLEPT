@@ -3,10 +3,10 @@ import blogData from "../blogData.json";
 import styles from "../styles/blogPostPage.module.css";
 import postCover from "../images/default.webp";
 import Weather from "../components/Weather";
+import PopUpInfo from "../components/PopUpInfo"
 import dateLogo from "../images/calendar-24.png";
 import placeLogo from "../images/bed-20.png";
 import likenessLogo from "../images/stars-24.png";
-import arrow from "../images/arrow-30.png";
 
 import React from "react";
 import { useParams } from "react-router-dom";
@@ -63,15 +63,7 @@ const BlogPostPage = () => {
           <article className={styles.article}>
             <p>{post.description}</p>
             <p>{post.content}</p>
-            <div className={styles.popUpInfo}>
-              <div className={styles.popUpTitle}>
-                <p>Practical information</p>
-                <img src={arrow} alt="arrow" />
-              </div> 
-              <div className={styles.popUpContent}>
-                <p>{post.info}</p>
-              </div>
-            </div>
+            <PopUpInfo info={post.info} />
           </article>
 
           <aside className={styles.aside}>
