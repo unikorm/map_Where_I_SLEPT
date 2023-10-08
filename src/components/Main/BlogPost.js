@@ -8,7 +8,7 @@ import likenessLogo from "../../images/stars-24.png";
 const formatDate = (dateString) => {
     const options = { year: "numeric", month: "numeric", day: "numeric" };
     return new Date(dateString).toLocaleDateString(undefined, options);
-}
+};
 
 const BlogPost = ({ post }) => {
     const formattedDate = formatDate(post.date);
@@ -46,7 +46,7 @@ const BlogPost = ({ post }) => {
                 </div>
             </aside>
         </article>
-    )
-}
+    );
+};
 
 export default BlogPost;
