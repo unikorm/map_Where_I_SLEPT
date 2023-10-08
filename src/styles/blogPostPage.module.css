@@ -1,6 +1,6 @@
 
 .blogPostPage {
-    margin-top: 7rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -20,6 +20,7 @@
     /* object-position: center center; */
     background-position: center center;
     border-radius: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .mainImage {
@@ -56,6 +57,12 @@
 
 
 
+
+@media screen and (min-width: 500px) {
+    .mainSection {
+        padding: 0 2rem;
+    }
+}
 
 
 @media screen and (min-width: 780px) {

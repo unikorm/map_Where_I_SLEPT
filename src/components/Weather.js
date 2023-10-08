@@ -1,6 +1,6 @@
 
 import { apiKeyPrivate} from "../apikey";
-import
+import styles from "../styles/weather.module.css";
 
 import { useEffect, useState } from "react";
 
@@ -18,32 +18,38 @@ const Weather = ({ place, city }) => {
 
         const [lat, lon] = place;
 
-        // fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)
-        //     .then((response) => {
-        //         if(!response.ok) {
-        //             throw new Error("Network response was not ok");
-        //         }
-        //         return response.json();
-        //     })
-        //     .then((data) => {
-        //         setWeatherData(data);
-        //     })
-        //     .catch((error) => {
-        //         console.error(error);
-        //     });
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)
+            .then((response) => {
+                if(!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then((data) => {
+                setWeatherData(data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
 
     }, [place, apiKey]);
+
+    const kelvinToCelsius = (value) => {
+        return (value - 273.15).toFixed(2);
+    };
 
     return (
         <section>
             {weatherData ? (
-                <article>
-                    <h2>Weather at: {city}</h2>
-                    <p>Temperature: {weatherData.main.temp}°C</p>
-                    <p>Conditions: {weatherData.weather[0].description}</p>
+                <article className={styles.mainArticle}>
+                    <p className={styles.firstP}>Weather at: <span className={styles.firstSpan}>{city}</span></p>
+                    <div className={styles.containerForInfo}>
+                        <p>Temperature: <span className={styles.values}>{kelvinToCelsius(weatherData.main.temp)}°C</span></p>
+                        <p>Conditions: <span className={styles.values}>{weatherData.weather[0].description}</span></p>
+                    </div>
                 </article>
             ) : (
-                <p>Loading weather data...</p>
+                <p className={styles.mainArticle}>Loading weather data...</p>
             )}
         </section>
     );
