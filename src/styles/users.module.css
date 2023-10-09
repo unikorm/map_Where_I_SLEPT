@@ -1,0 +1,15 @@
+
+.usersBox {
+
+}
+
+.separateUserBox {
+    background: #e68b0b67;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.separateUserBox p {
+    margin: 0;
+}

@@ -5,6 +5,7 @@ import postCover from "../images/default.webp";
 import Weather from "../components/Weather";
 import PopUpInfo from "../components/PopUpInfo";
 import MapInBlogPost from "../components/MapInBlogPost";
+import Users from "../components/Users";
 import dateLogo from "../images/calendar-24.png";
 import placeLogo from "../images/bed-20.png";
 import likenessLogo from "../images/stars-24.png";
@@ -72,7 +73,7 @@ const BlogPostPage = () => {
               <Weather place={post.position} city={post.place}/>
             </div>
             <div>
-              {/* here will be box with people who been there */}
+              <Users users={post.users} />
             </div>
           </aside>
         </section>
