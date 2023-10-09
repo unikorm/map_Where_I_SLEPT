@@ -3,7 +3,8 @@ import blogData from "../blogData.json";
 import styles from "../styles/blogPostPage.module.css";
 import postCover from "../images/default.webp";
 import Weather from "../components/Weather";
-import PopUpInfo from "../components/PopUpInfo"
+import PopUpInfo from "../components/PopUpInfo";
+import MapInBlogPost from "../components/MapInBlogPost";
 import dateLogo from "../images/calendar-24.png";
 import placeLogo from "../images/bed-20.png";
 import likenessLogo from "../images/stars-24.png";
@@ -77,7 +78,7 @@ const BlogPostPage = () => {
         </section>
 
         <section>
-          {/* here will be map with detail on that place */}
+          <MapInBlogPost data={post} />
         </section>
       </section>
     </section>

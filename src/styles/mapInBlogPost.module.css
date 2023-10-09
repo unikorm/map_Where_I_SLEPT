@@ -1,0 +1,10 @@
+
+.mapInBlogContainer {
+    height: 400px;  /* 600 */ 
+    margin: 1rem auto 1rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border-style: none;
+    max-width: 1300px;
+    width: 100%;
+}
