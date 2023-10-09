@@ -10,10 +10,7 @@
     padding-bottom: .4rem;
     display: flex;
     justify-content: space-between;
-}
-
-.clicked {
-    border-bottom: rgba(0, 0, 0, 0.05) solid;
+    border-bottom: none;
 }
 
 .popUpTitle p {
@@ -24,24 +21,25 @@
 .imgArrow {
     margin-right: .2rem;
     transform: rotate(90deg);
-    transition: transform 0.3s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 .rotate {
     transform: rotate(-90deg);
-    transition: transform 0.3s ease-in-out;
+    transition: transform .4s ease-in-out;
 }
 
 .popUpContent {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: max-height .4s ease-in-out, opacity .4s ease-in-out;
 }
 
-.popUpContent.open {
+.open {
     max-height: 1000px; /* Adjust to your desired max-height */
     opacity: 1;
+    border-top: .25px rgba(0, 0, 0, 0.05) solid;
 }
   
 
@@ -53,4 +51,5 @@
     font-weight: 300;
     line-height: 1.8rem !important;
     margin-bottom: .3rem;
+    color: rgba(0, 0, 0, 0.5);
 }

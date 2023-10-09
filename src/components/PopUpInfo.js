@@ -16,7 +16,7 @@ const toggleTitleClick = () => {
     return (
         <div className={styles.popUpInfo}>
               <div
-                className={`${styles.popUpTitle} ${isTitleClicked ? styles.clicked : ""}`}
+                className={styles.popUpTitle}
                 onClick={toggleTitleClick}
               >
                 <p>Practical information</p>
