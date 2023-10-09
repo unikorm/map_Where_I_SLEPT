@@ -623,6 +623,7 @@
         "id": 1,
         "nick": "Kapitan",
         "name": "Adamko",
+        "profilePhoto": "/images/adam-profile.webp",
         "description": "tu bude opis osoby",
         "info": "vseobecne info o osobe"
       },
@@ -630,6 +631,7 @@
         "id": 2,
         "nick": "Princezna",
         "name": "Anna",
+        "profilePhoto": "/images/anna-profile.webp",
         "description": "tu bude opis osoby",
         "info": "vseobecne info o osobe"
       },
@@ -637,6 +639,7 @@
         "id": 3,
         "nick": "",
         "name": "Nasta",
+        "profilePhoto": "/images/nasta-profile.webp",
         "description": "tu bude opis osoby",
         "info": "vseobecne info o osobe"
       },
@@ -644,6 +647,7 @@
         "id": 4,
         "nick": "",
         "name": "Denis",
+        "profilePhoto": "/images/denis-profile.webp",
         "description": "tu bude opis osoby",
         "info": "vseobecne info o osobe"
       },
@@ -651,6 +655,7 @@
         "id": 5,
         "nick": "Pindur",
         "name": "Jana",
+        "profilePhoto": "/images/jana-profile.webp",
         "description": "tu bude opis osoby",
         "info": "vseobecne info o osobe"
       }

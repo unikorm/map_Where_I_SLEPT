@@ -48,6 +48,14 @@
 
 .aside {
     flex: 1;
+    margin-top: 2rem;
+}
+
+.asideBox {
+    background: #c4d89345;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: fit-content;
 }
 
 .article p:first-of-type {
@@ -88,6 +96,12 @@
         padding: 0 1rem;
     }
 
+    .divImage {
+        height: 850px;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .mainSectionContainer {
         flex-wrap: nowrap;
     }
@@ -98,11 +112,7 @@
     
     .aside {
         flex: 1;
-        margin-left: 2rem;
-    }
-
-    .divImage {
-        height: 850px;
+        margin-left: 1.15rem;
     }
 }
 

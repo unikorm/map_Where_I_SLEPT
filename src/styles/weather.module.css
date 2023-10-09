@@ -1,4 +1,8 @@
 
+p {
+    margin: 0;
+}
+
 .mainArticle {
     background: #e68b0b67;
     padding: 1rem;

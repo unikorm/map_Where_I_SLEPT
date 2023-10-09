@@ -69,12 +69,14 @@ const BlogPostPage = () => {
           </article>
 
           <aside className={styles.aside}>
-            <div>
-              <Weather place={post.position} city={post.place}/>
-            </div>
-            <div>
-              <Users users={post.users} />
-            </div>
+            <section className={styles.asideBox}>
+              <div>
+                <Weather place={post.position} city={post.place}/>
+              </div>
+              <div>
+                <Users users={post.users} />
+              </div>
+            </section>
           </aside>
         </section>
 

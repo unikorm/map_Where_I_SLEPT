@@ -13,3 +13,9 @@
 .separateUserBox p {
     margin: 0;
 }
+
+.separateUserBox img {
+    max-width: 4.25rem;
+    height: auto;
+    border-radius: 50%;
+}
