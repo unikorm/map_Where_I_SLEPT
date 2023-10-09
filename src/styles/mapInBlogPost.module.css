@@ -8,3 +8,17 @@
     max-width: 1300px;
     width: 100%;
 }
+
+.popUpBoxInPost {
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+}
+
+.postCoverImageInPost {
+    object-fit: cover;
+    object-position: center center;
+    height: 20rem;
+    max-width: 100%;
+    border-radius: 1rem;
+}

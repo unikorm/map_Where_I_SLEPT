@@ -11,6 +11,7 @@ const PopupContent = ({ content }) => (
 const MapInBlogPost = ({ data }) => {
     const center = data.position;
     const zoom = 14;
+    const imageUrl = process.env.PUBLIC_URL + data.imagePath;
 
     return (
         <MapContainer center={center} zoom={zoom} maxZoom="18" scrollWheelZoom={false} className={styles.mapInBlogContainer}>
@@ -20,8 +21,8 @@ const MapInBlogPost = ({ data }) => {
             />
             <Marker key={data.id} position={data.position}>
                 <Popup>
-                    <section className={styles}>
-                        <img src={data} alt="post image" className={styles}/>
+                    <section className={styles.popUpBoxInPost}>
+                        <img src={imageUrl} alt="post image" className={styles.postCoverImageInPost}/>
                         <article>
                             <aside className={styles}>
                                 <PopupContent content={data.title}/>

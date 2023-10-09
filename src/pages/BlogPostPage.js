@@ -77,7 +77,7 @@ const BlogPostPage = () => {
           </aside>
         </section>
 
-        <section>
+        <section className={styles.mapSectionInPost}>
           <MapInBlogPost data={post} />
         </section>
       </section>
