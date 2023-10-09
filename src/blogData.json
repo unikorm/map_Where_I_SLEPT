@@ -575,6 +575,44 @@
         "content": "",
         "info": ""
       }
+    ],
+
+    "users": [
+      {
+        "id": 1,
+        "nick": "Kapitan",
+        "name": "Adamko",
+        "description": "tu bude opis osoby",
+        "info": "vseobecne info o osobe"
+      },
+      {
+        "id": 2,
+        "nick": "Princezna",
+        "name": "Anna",
+        "description": "tu bude opis osoby",
+        "info": "vseobecne info o osobe"
+      },
+      {
+        "id": 3,
+        "nick": "",
+        "name": "Nasta",
+        "description": "tu bude opis osoby",
+        "info": "vseobecne info o osobe"
+      },
+      {
+        "id": 4,
+        "nick": "",
+        "name": "Denis",
+        "description": "tu bude opis osoby",
+        "info": "vseobecne info o osobe"
+      },
+      {
+        "id": 5,
+        "nick": "Pindur",
+        "name": "Jana",
+        "description": "tu bude opis osoby",
+        "info": "vseobecne info o osobe"
+      }
     ]
   }
   
