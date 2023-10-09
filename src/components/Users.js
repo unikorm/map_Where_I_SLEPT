@@ -12,9 +12,9 @@ const Users = ({ users }) => {
             {userProfiles.map((user) => (
               <div key={user.id} className={styles.separateUserBox}>
                 <img src={process.env.PUBLIC_URL + user.profilePhoto} alt="profile photo" />
-                <div>
-                    <p>Nick: {user.nick}</p>
-                    <p>Name: {user.name}</p>
+                <div className={styles.profileNames}>
+                    <p>Nick: <span>{user.nick}</span></p>
+                    <p>Name: <span>{user.name}</span></p>
                 </div>
               </div>
             ))}
