@@ -8,9 +8,12 @@
 .popUpTitle {
     margin: .75rem 0 0;
     padding-bottom: .4rem;
-    border-bottom: rgba(0, 0, 0, 0.05) solid;
     display: flex;
     justify-content: space-between;
+}
+
+.clicked {
+    border-bottom: rgba(0, 0, 0, 0.05) solid;
 }
 
 .popUpTitle p {
@@ -18,10 +21,32 @@
     font-size: 1.5rem !important;
 }
 
-.popUpTitle img {
+.imgArrow {
     margin-right: .2rem;
     transform: rotate(90deg);
+    transition: transform 0.3s ease-in-out;
 }
+
+.rotate {
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.popUpContent {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.popUpContent.open {
+    max-height: 1000px; /* Adjust to your desired max-height */
+    opacity: 1;
+}
+  
+
+  
+  
 
 .popUpContent p {
     font-size: 1.15rem !important;

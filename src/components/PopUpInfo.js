@@ -6,21 +6,25 @@ import React, { useState } from "react";
 
 const PopUpInfo = ({ info }) => {
 const [isContentVisible, setIsContentVisible] = useState(false);
+const [isTitleClicked, setIsTitleClicked] = useState(false);
+
+const toggleTitleClick = () => {
+    setIsContentVisible(!isContentVisible);
+    setIsTitleClicked(!isTitleClicked);
+};
 
     return (
         <div className={styles.popUpInfo}>
               <div
-                className={styles.popUpTitle}
-                onClick={() => setIsContentVisible(!isContentVisible)}
+                className={`${styles.popUpTitle} ${isTitleClicked ? styles.clicked : ""}`}
+                onClick={toggleTitleClick}
               >
                 <p>Practical information</p>
-                <img src={arrow} alt="arrow" />
+                <img src={arrow} alt="arrow" className={`${styles.imgArrow} ${isTitleClicked ? styles.rotate : ""}`} />
               </div>
-              {isContentVisible && (
-                <div className={styles.popUpContent}>
+              <div className={`${styles.popUpContent} ${isContentVisible ? styles.open : ""}`}>
                     <p>{info}</p>
-                </div>
-              )}
+              </div>
         </div>
     );
 };
