@@ -26,9 +26,7 @@ const Blog = () => {
             <h3 className={styles.h3}>More about places where I/We slept</h3>
             <section className={styles.postsTable}>
             {displayedPosts.map((post, index) => (
-                <Link to={`/${post.id}`} key={post.id} className={`${styles.postBox}
-                ${ index >= 0 && styles.show
-                  }`}>
+                <Link to={`/${post.id}`} key={post.id} className={styles.postBox}>
                     <BlogPost post={post} />
                 </Link>
             ))}

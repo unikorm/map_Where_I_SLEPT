@@ -10,7 +10,7 @@ import dateLogo from "../images/calendar-24.png";
 import placeLogo from "../images/bed-20.png";
 import likenessLogo from "../images/stars-24.png";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const formatDate = (dateString) => {
@@ -23,6 +23,10 @@ const BlogPostPage = () => {
   const post = blogData.posts.find((post) => post.id === parseInt(id, 10));
   const mainImagePath = process.env.PUBLIC_URL + post.imagePath || postCover;
   const formattedDate = formatDate(post.date);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!post) {
     return <div>cosi je na**cu</div>; // Handle the case when the post is not found

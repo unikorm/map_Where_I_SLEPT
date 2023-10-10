@@ -29,14 +29,14 @@
     margin-top: 1rem;
     text-decoration: none;
     color: black;
-    opacity: 0;
+    opacity: 1;
     /* transition: opacity .9s ease-in-out; */
 }
 
-.postBox.show {
+/* .postBox.show {
     opacity: 1;
     transition: opacity .9s ease-in-out;
-}
+} */
 
 .loadMoreBttn {
     margin-top: 2.75rem;
