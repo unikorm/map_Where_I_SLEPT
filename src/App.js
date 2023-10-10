@@ -18,9 +18,9 @@ const App = () => {
       <React.Fragment>
         <Header />
         <Routes>
-          <Route exact path="/" Component={Main} />
-          <Route exact path="/aboutMe" Component={About} />
-          <Route exact path="/:id" element={<BlogPostPage />} />
+          <Route path="/" exact Component={Main} />
+          <Route path="/aboutMe" exact Component={About} />
+          <Route path="/:id" element={<BlogPostPage />} />
         </Routes>
         <div className="footer-container">
         <Footer />

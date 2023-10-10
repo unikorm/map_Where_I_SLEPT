@@ -4,15 +4,15 @@ import BlogPost from "./BlogPost";
 import blogData from "../../blogData.json";
 
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Blog = () => {
+
     const initialPostCount = 12;
     const [displayedPosts, setDisplayedPosts] = useState(() => {
         return blogData.posts.slice(0, initialPostCount);
     });
 
-    const [displayedPostBoxes, setDisplayedPostBoxes] = useState([]);
 
     const loadMorePosts = () => {
         const newDisplayCount = displayedPosts.length + 12;
@@ -21,12 +21,14 @@ const Blog = () => {
         }
     };
 
+
     return (
         <section className={styles.blogSection}>
             <h3 className={styles.h3}>More about places where I/We slept</h3>
             <section className={styles.postsTable}>
-            {displayedPosts.map((post, index) => (
-                <Link to={`/${post.id}`} key={post.id} className={styles.postBox}>
+            {displayedPosts.map((post) => (
+                <Link to={`/${post.id}`}
+                key={post.id} className={styles.postBox}>
                     <BlogPost post={post} />
                 </Link>
             ))}

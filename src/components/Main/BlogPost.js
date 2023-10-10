@@ -11,6 +11,7 @@ const formatDate = (dateString) => {
 };
 
 const BlogPost = ({ post }) => {
+
     const formattedDate = formatDate(post.date);
     const imagePath = process.env.PUBLIC_URL + post.imagePath || postCover;
     
