@@ -32,7 +32,20 @@
 }
 
 .loadMoreBttn {
-    margin-top: 2rem;
+    margin-top: 2.75rem;
+    padding: 1rem 3.25rem;
+    font-size: 1rem;
+    font-family: 'Shantell Sans', cursive;
+    border: none;
+    border-radius: 1rem;
+    background: #ac5b4d;
+    color: #fbfcf6;
+    transition: background .5s ease-in;
+}
+
+.loadMoreBttn:hover {
+    color: #e6890b;
+    background: #ac5b4d1d;
 }
 
 @media screen and (min-width: 1275px) {
