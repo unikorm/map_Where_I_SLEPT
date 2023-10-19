@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
@@ -13,7 +13,6 @@ import "./App.css";
 const App = () => {
 
   return (
-    <Router>
       <ActivePageProvider>
       <React.Fragment>
         <Header />
@@ -27,7 +26,6 @@ const App = () => {
         </div>
       </React.Fragment>
       </ActivePageProvider>
-    </Router>
   );
 }
 
