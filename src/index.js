@@ -7,7 +7,14 @@ import './index.css';
 import App from './App';
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    children: [
+      
+    ]
 
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
