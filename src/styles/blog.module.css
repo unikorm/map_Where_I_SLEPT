@@ -30,13 +30,7 @@
     text-decoration: none;
     color: black;
     opacity: 1;
-    /* transition: opacity .9s ease-in-out; */
 }
-
-/* .postBox.show {
-    opacity: 1;
-    transition: opacity .9s ease-in-out;
-} */
 
 .loadMoreBttn {
     margin-top: 2.75rem;
@@ -54,6 +48,10 @@
     color: #e6890b;
     background: #ac5b4d1d;
 }
+
+
+
+
 
 @media screen and (min-width: 1275px) {
     .postsTable {

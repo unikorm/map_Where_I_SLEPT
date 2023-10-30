@@ -1,3 +1,4 @@
+
 html, body {
     background-color: rgb(255, 247, 237);
     font-family: 'Shantell Sans', cursive;
@@ -7,8 +8,6 @@ html, body {
 
     background-color: #fbfcf6;
 }
-
-
 
 #root {
     width: 100%;

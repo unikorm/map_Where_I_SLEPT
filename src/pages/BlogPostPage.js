@@ -1,11 +1,14 @@
 
 import blogData from "../blogData.json";
+
 import styles from "../styles/blogPostPage.module.css";
-import postCover from "../images/default.webp";
+
 import Weather from "../components/Weather";
 import PopUpInfo from "../components/PopUpInfo";
 import MapInBlogPost from "../components/MapInBlogPost";
 import Users from "../components/Users";
+
+import postCover from "../images/default.webp";
 import dateLogo from "../images/calendar-24.png";
 import placeLogo from "../images/bed-20.png";
 import likenessLogo from "../images/stars-24.png";
@@ -19,7 +22,7 @@ const formatDate = (dateString) => {
 };
 
 const BlogPostPage = () => {
-  const { id } = useParams(); // Get the post ID from the URL
+  const { id } = useParams();
   const post = blogData.posts.find((post) => post.id === parseInt(id, 10));
   const mainImagePath = process.env.PUBLIC_URL + post.imagePath || postCover;
   const formattedDate = formatDate(post.date);
@@ -29,7 +32,7 @@ const BlogPostPage = () => {
   }, []);
 
   if (!post) {
-    return <div>cosi je na**cu</div>; // Handle the case when the post is not found
+    return <div>cosi je na**cu</div>;
   }
 
   return (
@@ -69,23 +72,23 @@ const BlogPostPage = () => {
           <article className={styles.article}>
             <p>{post.description}</p>
             <p>{post.content}</p>
-            <PopUpInfo info={post.info} />
+            <PopUpInfo info={post.info} />        { /* component */ }
           </article>
 
           <aside className={styles.aside}>
             <section className={styles.asideBox}>
               <div>
-                <Weather place={post.position} city={post.place}/>
+                <Weather place={post.position} city={post.place}/>         { /* component */ }
               </div>
               <div>
-                <Users users={post.users} />
+                <Users users={post.users} />         { /* component */ }
               </div>
             </section>
           </aside>
         </section>
 
         <section className={styles.mapSectionInPost}>
-          <MapInBlogPost data={post} />
+          <MapInBlogPost data={post} />         { /* component */ }
         </section>
       </section>
     </section>

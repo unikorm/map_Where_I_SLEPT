@@ -20,17 +20,3 @@
     padding-bottom: 1rem;
     border-bottom: rgba(0, 0, 0, 0.05) solid;
 }
-
-
-
-
-
-/* responsiveness */
-
-/* @media screen and (min-width: 750px) {
-    .descriptionSection {
-        display: flex;
-        max-width: 500px;
-        align-self: center;
-    }
-} */

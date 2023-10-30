@@ -1,7 +1,7 @@
 
-import { Link } from "react-router-dom";
-
 import styles from "../styles/about.module.css";
+
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
 
