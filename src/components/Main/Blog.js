@@ -8,18 +8,23 @@ import { Link } from "react-router-dom";
 
 const Blog = () => {
 
-    const initialPostCount = 12;
+    const initialPostCount = 6;
     const [displayedPosts, setDisplayedPosts] = useState(() => {
         return blogData.posts.slice(0, initialPostCount);
     });
 
 
-    const loadMorePosts = () => {
-        const newDisplayCount = displayedPosts.length + 12;
-        if (newDisplayCount <= blogData.posts.length) {
-          setDisplayedPosts(blogData.posts.slice(0, newDisplayCount));
-        }
-    };
+    // const loadMorePosts = () => {
+    //     const newDisplayCount = displayedPosts.length + 12;
+    //     if (newDisplayCount <= blogData.posts.length) {
+    //       setDisplayedPosts(blogData.posts.slice(0, newDisplayCount));
+    //     }
+    // };
+
+
+    // dobre, toto bude inak, ja dam na mapu vsetky miesta kde som spal, ale blog section bude iba s miestami co si 
+    // vyberiem ze stoja za to, takto na zaciatok, lebo tolko contentu nenapisem, takze asi mozno max 10 to bude,
+    // potom casom mozno viac... chcem programovat, nie pisat blog...
 
 
     return (
@@ -33,7 +38,7 @@ const Blog = () => {
                 </Link>
             ))}
             </section>
-            {displayedPosts.length < blogData.posts.length && (
+            {/* {displayedPosts.length < blogData.posts.length && (
                 <button 
                     onClick={loadMorePosts}
                     className={styles.loadMoreBttn}
@@ -41,7 +46,7 @@ const Blog = () => {
                 >
                     Load More
                 </button>
-            )}
+            )} */}
         </section>
     );
 }
