@@ -29,7 +29,7 @@ const Map = () => {
                     <Marker key={marker.id} position={marker.position}>
                         <Popup>
                             <section className={styles.popUpBox}>
-                                <img src={postCover} alt="post image" className={styles.postCoverImage}/>
+                                <img src={postCover} alt="post cover" className={styles.postCoverImage}/>
                                 <article>
                                     <aside className={styles.popUpMain}>
                                         <PopupContent content={marker.title}/>

@@ -3,19 +3,30 @@ import styles from "../styles/footer.module.css";
 import logo from "../images/forest-96.svg";
 import GitHubLogo from "../images/github-40.svg";
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-// const scrollToTop = () => {                                       tuto budem musiet znova urobit synchro na button
-//     window.scrollTo({top: 0, behavior: "smooth"});                na About aby to naraz menilo a scroll to top smoothly...
-// };
 
 const Footer = () => {
+
+    const location = useLocation();
+
+    const scrollToTop = () => {
+        if (location.pathname !== "/") {
+            window.scrollTo(0, 0);
+        } else {
+            window.scrollTo({top: 0, behavior: "smooth"}); 
+        };             
+    };
+
+
+
 
     return (
         <footer>
             <section className={styles.logoInFooter}>
                 <div className={styles.logoSectionLeft}>
                     <Link to="/"
+                        onClick={scrollToTop}
                         className={styles.logoLinkStyle}>
                         <img src={logo} alt="logo"/>
                         <p>myPATH</p>
@@ -25,7 +36,9 @@ const Footer = () => {
             <section className={styles.menuAndContactsInFooter}>
                 <ul className={styles.contactsSectionInFooter}>
                     <li className={styles.linkToGithub}>
-                        <Link to="https://github.com/unikorm" >
+                        <Link to="https://github.com/unikorm"
+                            target="_blank" rel="noopener noreferrer"
+                            >
                             <img src={GitHubLogo} alt="GITHUB" />
                         </Link>
                     </li>
