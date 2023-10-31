@@ -6,7 +6,7 @@ import GitHubLogo from "../images/github-40.svg";
 import { Link, useLocation } from 'react-router-dom';
 
 
-const Footer = ({ aboutMeClicked, setAboutMeClicked }) => {
+const Footer = ({ isAboutMePage }) => {
 
     const location = useLocation();
 
@@ -44,7 +44,7 @@ const Footer = ({ aboutMeClicked, setAboutMeClicked }) => {
                     </li>
                     <li>
                         <Link to="/aboutMe"
-                            className={styles.linkStyleMenu}>
+                            className={`${styles.linkStyleMenu} ${isAboutMePage ? styles.active : ""}`}>
                             About US
                         </Link>
                     </li>

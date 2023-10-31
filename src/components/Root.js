@@ -2,17 +2,17 @@
 import Footer from "./Footer";
 import Header from "./Header";
 
-import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 const Root = () => {
-  const [aboutMeClicked, setAboutMeClicked] = useState(false);
+  const location = useLocation();
+  const isAboutMePage = location.pathname === "/aboutMe";
 
   return (
     <>
-      <Header aboutMeClicked={aboutMeClicked} setAboutMeClicked={setAboutMeClicked} />
+      <Header isAboutMePage={isAboutMePage} />
       <Outlet />
-      <Footer aboutMeClicked={aboutMeClicked} setAboutMeClicked={setAboutMeClicked} />
+      <Footer isAboutMePage={isAboutMePage} />
     </>
   );
 };

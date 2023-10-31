@@ -5,7 +5,7 @@ import logo from "../images/forest-48.svg";
 import { Link, useLocation } from 'react-router-dom';
 
 
-const Header = ({ aboutMeClicked, setAboutMeClicked }) => {
+const Header = ({ isAboutMePage }) => {
 
     const location = useLocation();
 
@@ -25,10 +25,7 @@ const Header = ({ aboutMeClicked, setAboutMeClicked }) => {
             <nav className={styles.navigation}>
                 <div className={styles.logoSectionLeft}>
                     <Link to="/"
-                        onClick={() => {
-                            // setAboutMeClicked(false);
-                            scrollToTop()
-                        }}
+                        onClick={scrollToTop}
                         className={styles.logoLinkStyle}>
                         <img src={logo} alt="logo" />
                         <p>myPATH</p>
@@ -37,7 +34,7 @@ const Header = ({ aboutMeClicked, setAboutMeClicked }) => {
                 <ul className={styles.menuNavigationCentre}>
                     <li>
                         <Link to="/aboutMe"
-                            className={`${styles.linkStyleMenu} ${aboutMeClicked ? styles.active : ''}`}>
+                            className={`${styles.linkStyleMenu} ${isAboutMePage ? styles.active : ""}`}>
                             About US
                         </Link>
                     </li>
