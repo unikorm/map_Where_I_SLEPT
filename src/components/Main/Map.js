@@ -2,7 +2,7 @@
 import styles from "../../styles/map.module.css";
 import blogData from "../../blogData.json";
 import postCover from "../../images/postCover.webp";
-import icon from "../../images/bed-20.png";
+import defaultIcon from "../../images/bed-20.png";
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from "leaflet";
@@ -23,13 +23,6 @@ const Map = () => {
     const zoom = 7;
     const data = blogData.posts;
 
-    const customMarker = L.icon({
-        iconUrl: icon,
-        iconSize: [20, 20],
-        iconAnchor: [10, 20],
-        popupAnchor: [0, -20]
-    });
-
     return (
         <MapContainer center={center} zoom={zoom} maxZoom="18" scrollWheelZoom={false} className={styles.mapContainer}>
             <TileLayer
@@ -38,7 +31,12 @@ const Map = () => {
             />
             {data.map(( marker ) => (
                 marker.position && marker.position.length === 2 ? (
-                    <Marker key={marker.id} position={marker.position} icon={customMarker}>
+                    <Marker key={marker.id} position={marker.position} icon={L.icon({
+                        iconUrl: marker.mapIconPath || defaultIcon,
+                        iconSize: [20, 20],
+                        iconAnchor: [10, 20],
+                        popupAnchor: [0, -20]
+                    })}>
                         <Popup>
                             <section className={styles.popUpBox}>
                                 <img src={process.env.PUBLIC_URL + marker.imagePath || postCover} alt="post cover" className={styles.postCoverImage}/>
