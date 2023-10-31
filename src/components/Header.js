@@ -2,20 +2,33 @@
 import styles from "../styles/header.module.css";
 import logo from "../images/forest-48.svg";
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
-// const scrollToTop = () => {
-//     window.scrollTo({top: 0, behavior: "smooth"});           tuto budem musiet znova urobit synchro na button 
-// };                                                           na About aby to naraz menilo a scroll to top smoothly...
+const Header = ({ aboutMeClicked, setAboutMeClicked }) => {
 
-const Header = () => {
+    const location = useLocation();
+
+    const scrollToTop = () => {
+        if (location.pathname !== "/") {
+            window.scrollTo(0, 0);
+        } else {
+            window.scrollTo({top: 0, behavior: "smooth"}); 
+        };             
+    };
+
+
+
 
     return (
         <header className={styles.header}>
             <nav className={styles.navigation}>
                 <div className={styles.logoSectionLeft}>
                     <Link to="/"
+                        onClick={() => {
+                            // setAboutMeClicked(false);
+                            scrollToTop()
+                        }}
                         className={styles.logoLinkStyle}>
                         <img src={logo} alt="logo" />
                         <p>myPATH</p>
@@ -24,7 +37,7 @@ const Header = () => {
                 <ul className={styles.menuNavigationCentre}>
                     <li>
                         <Link to="/aboutMe"
-                            className={styles.linkStyleMenu}>
+                            className={`${styles.linkStyleMenu} ${aboutMeClicked ? styles.active : ''}`}>
                             About US
                         </Link>
                     </li>

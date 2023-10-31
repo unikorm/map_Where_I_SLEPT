@@ -6,7 +6,7 @@ import GitHubLogo from "../images/github-40.svg";
 import { Link, useLocation } from 'react-router-dom';
 
 
-const Footer = () => {
+const Footer = ({ aboutMeClicked, setAboutMeClicked }) => {
 
     const location = useLocation();
 
