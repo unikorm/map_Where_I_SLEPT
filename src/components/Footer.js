@@ -5,8 +5,8 @@ import GitHubLogo from "../images/github-40.svg";
 
 import { Link } from 'react-router-dom';
 
-// const scrollToTop = () => {
-//     window.scrollTo({top: 0, behavior: "smooth"});
+// const scrollToTop = () => {                                       tuto budem musiet znova urobit synchro na button
+//     window.scrollTo({top: 0, behavior: "smooth"});                na About aby to naraz menilo a scroll to top smoothly...
 // };
 
 const Footer = () => {
@@ -39,6 +39,6 @@ const Footer = () => {
             </section>
         </footer>
     );
-}
+};
 
 export default Footer;

@@ -3,19 +3,19 @@ import styles from "../../styles/map.module.css";
 import blogData from "../../blogData.json";
 import postCover from "../../images/postCover.webp";
 
-import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
+import React from "react";
+
+
 
 const PopupContent = ({ content }) => (
   <p dangerouslySetInnerHTML={{ __html: content }} />
 );
 
-
-
-
 const Map = () => {
-    const center = [48.825, 19.391]; // Change to your desired center coordinates
-    const zoom = 7 // Adjust the zoom level
+    const center = [48.825, 19.391];
+    const zoom = 7;
     const data = blogData.posts;
 
     return (

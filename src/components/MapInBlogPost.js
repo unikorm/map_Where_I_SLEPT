@@ -1,8 +1,11 @@
 
 import styles from "../styles/mapInBlogPost.module.css";
 
-import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+
+import React from "react";
+
+
 
 const PopupContent = ({ content }) => (
     <p dangerouslySetInnerHTML={{ __html: content }} />
@@ -22,7 +25,7 @@ const MapInBlogPost = ({ data }) => {
             <Marker key={data.id} position={data.position}>
                 <Popup>
                     <section className={styles.popUpBoxInPost}>
-                        <img src={imageUrl} alt="post image" className={styles.postCoverImageInPost}/>
+                        <img src={imageUrl} alt="post cover" className={styles.postCoverImageInPost}/>
                         <article>
                             <aside className={styles}>
                                 <PopupContent content={data.title}/>

@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 
 // const scrollToTop = () => {
-//     window.scrollTo({top: 0, behavior: "smooth"});
-// };
+//     window.scrollTo({top: 0, behavior: "smooth"});           tuto budem musiet znova urobit synchro na button 
+// };                                                           na About aby to naraz menilo a scroll to top smoothly...
 
 const Header = () => {
 

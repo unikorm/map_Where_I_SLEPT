@@ -6,7 +6,6 @@ import Description from "../Main/Description";
 
 const Main = () => {
     
-
     return (
         <main className={styles.main}>
             <Map />
@@ -14,6 +13,6 @@ const Main = () => {
             <Blog />
         </main>
     );
-}
+};
 
 export default Main;
