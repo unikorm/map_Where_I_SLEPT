@@ -2,10 +2,14 @@
 import styles from "../../styles/map.module.css";
 import blogData from "../../blogData.json";
 import postCover from "../../images/postCover.webp";
+import icon from "../../images/bed-20.png";
 
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import L from "leaflet";
 
 import React from "react";
+
+
 
 
 
@@ -13,10 +17,18 @@ const PopupContent = ({ content }) => (
   <p dangerouslySetInnerHTML={{ __html: content }} />
 );
 
+
 const Map = () => {
     const center = [48.825, 19.391];
     const zoom = 7;
     const data = blogData.posts;
+
+    const customMarker = L.icon({
+        iconUrl: icon,
+        iconSize: [20, 20],
+        iconAnchor: [10, 20],
+        popupAnchor: [0, -20]
+    });
 
     return (
         <MapContainer center={center} zoom={zoom} maxZoom="18" scrollWheelZoom={false} className={styles.mapContainer}>
@@ -26,10 +38,10 @@ const Map = () => {
             />
             {data.map(( marker ) => (
                 marker.position && marker.position.length === 2 ? (
-                    <Marker key={marker.id} position={marker.position}>
+                    <Marker key={marker.id} position={marker.position} icon={customMarker}>
                         <Popup>
                             <section className={styles.popUpBox}>
-                                <img src={postCover} alt="post cover" className={styles.postCoverImage}/>
+                                <img src={process.env.PUBLIC_URL + marker.imagePath || postCover} alt="post cover" className={styles.postCoverImage}/>
                                 <article>
                                     <aside className={styles.popUpMain}>
                                         <PopupContent content={marker.title}/>
@@ -48,6 +60,6 @@ const Map = () => {
             ))}
         </MapContainer>
     );
-}
+};
 
 export default Map;
