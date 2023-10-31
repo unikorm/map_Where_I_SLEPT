@@ -5,12 +5,17 @@ import styles from "../styles/popUpInfo.module.css";
 import React, { useState } from "react";
 
 const PopUpInfo = ({ info }) => {
-  const [isContentVisible, setIsContentVisible] = useState(false);     { /* toto sa mi nepaci, tu dam iba jeden useState */ }
-  const [isTitleClicked, setIsTitleClicked] = useState(false);      
+  const [state, setState] = useState({
+    isContentVisible: false,
+    isTitleClicked:false,
+  });
 
   const toggleTitleClick = () => {
-      setIsContentVisible(!isContentVisible);
-      setIsTitleClicked(!isTitleClicked);
+      setState({
+        ...state,
+        isContentVisible: !state.isContentVisible,
+        isTitleClicked: !state.isTitleClicked,
+      });
   };
 
       return (
@@ -20,9 +25,9 @@ const PopUpInfo = ({ info }) => {
                   onClick={toggleTitleClick}
                 >
                   <p>Practical information</p>
-                  <img src={arrow} alt="arrow" className={`${styles.imgArrow} ${isTitleClicked ? styles.rotate : ""}`} />
+                  <img src={arrow} alt="arrow" className={`${styles.imgArrow} ${state.isTitleClicked ? styles.rotate : ""}`} />
                 </div>
-                <div className={`${styles.popUpContent} ${isContentVisible ? styles.open : ""}`}>
+                <div className={`${styles.popUpContent} ${state.isContentVisible ? styles.open : ""}`}>
                   <p>{info}</p>
                 </div>
           </div>
