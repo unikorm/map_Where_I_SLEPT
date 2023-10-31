@@ -3,6 +3,7 @@
     "posts": [
       {
         "id": 1,
+        "show": true,
         "title": "Pri nemocnici",
         "place": "Lasnitzhone, Graz",
         "city": "",
@@ -18,6 +19,7 @@
       },
       {
         "id": 2,
+        "show": true,
         "title": "Pri Dunaji",
         "place": "Bratislava",
         "city": "",
@@ -33,6 +35,7 @@
       },
       {
         "id": 3,
+        "show": true,
         "title": "Pri rybníku",
         "place": "Ulrichs",
         "city": "",
@@ -48,6 +51,7 @@
       },
       {
         "id": 4,
+        "show": true,
         "title": "Jazero Bled",
         "place": "Bled",
         "city": "",
@@ -63,6 +67,7 @@
       },
       {
         "id": 5,
+        "show": true,
         "title": "Pri pláži",
         "place": "Marina Julia",
         "city": "",
@@ -78,6 +83,7 @@
       },
       {
         "id": 6,
+        "show": false,
         "title": "V srdci Slovenska",
         "place": "Banská Štiavnica",
         "city": "",
@@ -93,6 +99,7 @@
       },
       {
         "id": 7,
+        "show": true,
         "title": "V divočine",
         "place": "Veľká Fatra",
         "city": "",
@@ -108,6 +115,7 @@
       },
       {
         "id": 8,
+        "show": false,
         "title": "Naše miesto NO.1",
         "place": "Bytča",
         "city": "",
@@ -123,6 +131,7 @@
       },
       {
         "id": 9,
+        "show": false,
         "title": "Čakanie na Princeznú",
         "place": "Medyka",
         "city": "",
@@ -138,6 +147,7 @@
       },
       {
         "id": 10,
+        "show": false,
         "title": "Pri osade",
         "place": "Batizovce",
         "city": "",
@@ -153,6 +163,7 @@
       },
       {
         "id": 11,
+        "show": false,
         "title": "Na smetisku",
         "place": "Brezno",
         "city": "",
@@ -168,6 +179,7 @@
       },
       {
         "id": 12,
+        "show": false,
         "title": "Cestou do Nemecka",
         "place": "Sekule",
         "city": "",
@@ -183,6 +195,7 @@
       },
       {
         "id": 13,
+        "show": false,
         "title": "Na poli",
         "place": "Smrdáky",
         "city": "",
@@ -198,6 +211,7 @@
       },
       {
         "id": 14,
+        "show": false,
         "title": "V útulňi",
         "place": "Nízke Tatry",
         "city": "",
@@ -213,6 +227,7 @@
       },
       {
         "id": 15,
+        "show": false,
         "title": "Naše miesto NO.2",
         "place": "Jazernica",
         "city": "",
@@ -228,6 +243,7 @@
       },
       {
         "id": 16,
+        "show": false,
         "title": "Manín",
         "place": "Považská Bystrica",
         "city": "",
@@ -243,6 +259,7 @@
       },
       {
         "id": 17,
+        "show": false,
         "title": "Vápeč",
         "place": "Horná Poruba",
         "city": "",
@@ -258,6 +275,7 @@
       },
       {
         "id": 18,
+        "show": false,
         "title": "Na skale",
         "place": "Súľov",
         "city": "",
@@ -273,6 +291,7 @@
       },
       {
         "id": 19,
+        "show": false,
         "title": "Na Martinkách",
         "place": "Martinky",
         "city": "",
@@ -288,6 +307,7 @@
       },
       {
         "id": 20,
+        "show": false,
         "title": "Na štrkovisku",
         "place": "Dvory nad Žitavou",
         "city": "",
@@ -303,6 +323,7 @@
       },
       {
         "id": 21,
+        "show": false,
         "title": "Veľké Oslo",
         "place": "Oslo",
         "city": "",
@@ -318,6 +339,7 @@
       },
       {
         "id": 22,
+        "show": false,
         "title": "Prvá spoločná dovolenka",
         "place": "Barcelona",
         "city": "",
@@ -333,6 +355,7 @@
       },
       {
         "id": 23,
+        "show": false,
         "title": "Talianska rychlovka",
         "place": "Bergamo",
         "city": "",
@@ -348,6 +371,7 @@
       },
       {
         "id": 24,
+        "show": false,
         "title": "Český raj",
         "place": "Turnov",
         "city": "",
@@ -363,6 +387,7 @@
       },
       {
         "id": 25,
+        "show": false,
         "title": "Na pláži na VD Orava",
         "place": "Bobrov",
         "city": "",
@@ -378,6 +403,7 @@
       },
       {
         "id": 26,
+        "show": false,
         "title": "V kempe",
         "place": "Prístav",
         "city": "",
@@ -393,6 +419,7 @@
       },
       {
         "id": 27,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -408,6 +435,7 @@
       },
       {
         "id": 28,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -423,6 +451,7 @@
       },
       {
         "id": 29,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -438,6 +467,7 @@
       },
       {
         "id": 30,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -453,6 +483,7 @@
       },
       {
         "id": 31,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -468,6 +499,7 @@
       },
       {
         "id": 32,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -483,6 +515,7 @@
       },
       {
         "id": 33,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -498,6 +531,7 @@
       },
       {
         "id": 34,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -513,6 +547,7 @@
       },
       {
         "id": 35,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -528,6 +563,7 @@
       },
       {
         "id": 36,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -543,6 +579,7 @@
       },
       {
         "id": 37,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -558,6 +595,7 @@
       },
       {
         "id": 38,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -573,6 +611,7 @@
       },
       {
         "id": 39,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -588,6 +627,7 @@
       },
       {
         "id": 40,
+        "show": false,
         "title": "Sexamples",
         "place": "places",
         "city": "",
@@ -603,6 +643,7 @@
       },
       {
         "id": 41,
+        "show": false,
         "title": "Sexample",
         "place": "places",
         "city": "",
