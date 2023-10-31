@@ -3,7 +3,7 @@
     "posts": [
       {
         "id": 1,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": true,
         "title": "Pri nemocnici",
         "place": "Lasnitzhone, Graz",
@@ -20,7 +20,7 @@
       },
       {
         "id": 2,
-        "mapIconPath": "./images/arrow-30.png",
+        "mapIconPath": "/images/car-36.png",
         "show": true,
         "title": "Pri Dunaji",
         "place": "Bratislava",
@@ -37,7 +37,7 @@
       },
       {
         "id": 3,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": true,
         "title": "Pri rybníku",
         "place": "Ulrichs",
@@ -54,7 +54,7 @@
       },
       {
         "id": 4,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": true,
         "title": "Jazero Bled",
         "place": "Bled",
@@ -71,7 +71,7 @@
       },
       {
         "id": 5,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": true,
         "title": "Pri pláži",
         "place": "Marina Julia",
@@ -88,7 +88,7 @@
       },
       {
         "id": 6,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": false,
         "title": "V srdci Slovenska",
         "place": "Banská Štiavnica",
@@ -105,7 +105,7 @@
       },
       {
         "id": 7,
-        "mapIconPath": "",
+        "mapIconPath": "/images/sleeping-bag-40.png",
         "show": true,
         "title": "V divočine",
         "place": "Veľká Fatra",
@@ -122,7 +122,7 @@
       },
       {
         "id": 8,
-        "mapIconPath": "",
+        "mapIconPath": "/images/tent-36.png",
         "show": false,
         "title": "Naše miesto NO.1",
         "place": "Bytča",
@@ -139,7 +139,7 @@
       },
       {
         "id": 9,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": false,
         "title": "Čakanie na Princeznú",
         "place": "Medyka",
@@ -156,7 +156,7 @@
       },
       {
         "id": 10,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": false,
         "title": "Pri osade",
         "place": "Batizovce",
@@ -173,7 +173,7 @@
       },
       {
         "id": 11,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": false,
         "title": "Na smetisku",
         "place": "Brezno",
@@ -190,7 +190,7 @@
       },
       {
         "id": 12,
-        "mapIconPath": "",
+        "mapIconPath": "/images/car-36.png",
         "show": false,
         "title": "Cestou do Nemecka",
         "place": "Sekule",
@@ -207,7 +207,7 @@
       },
       {
         "id": 13,
-        "mapIconPath": "",
+        "mapIconPath": "/images/tent-36.png",
         "show": false,
         "title": "Na poli",
         "place": "Smrdáky",
@@ -224,7 +224,7 @@
       },
       {
         "id": 14,
-        "mapIconPath": "",
+        "mapIconPath": "/images/hut-40.png",
         "show": false,
         "title": "V útulňi",
         "place": "Nízke Tatry",
@@ -241,7 +241,7 @@
       },
       {
         "id": 15,
-        "mapIconPath": "",
+        "mapIconPath": "/images/tent-36.png",
         "show": false,
         "title": "Naše miesto NO.2",
         "place": "Jazernica",
@@ -258,7 +258,7 @@
       },
       {
         "id": 16,
-        "mapIconPath": "",
+        "mapIconPath": "/images/sleeping-bag-40.png",
         "show": false,
         "title": "Manín",
         "place": "Považská Bystrica",
@@ -275,7 +275,7 @@
       },
       {
         "id": 17,
-        "mapIconPath": "",
+        "mapIconPath": "/images/sleeping-bag-40.png",
         "show": false,
         "title": "Vápeč",
         "place": "Horná Poruba",
@@ -292,7 +292,7 @@
       },
       {
         "id": 18,
-        "mapIconPath": "",
+        "mapIconPath": "/images/sleeping-bag-40.png",
         "show": false,
         "title": "Na skale",
         "place": "Súľov",
@@ -309,7 +309,7 @@
       },
       {
         "id": 19,
-        "mapIconPath": "",
+        "mapIconPath": "/images/sleeping-bag-40.png",
         "show": false,
         "title": "Na Martinkách",
         "place": "Martinky",
@@ -326,7 +326,7 @@
       },
       {
         "id": 20,
-        "mapIconPath": "",
+        "mapIconPath": "/images/tent-36.png",
         "show": false,
         "title": "Na štrkovisku",
         "place": "Dvory nad Žitavou",
@@ -343,7 +343,7 @@
       },
       {
         "id": 21,
-        "mapIconPath": "",
+        "mapIconPath": "/images/hotel-40.png",
         "show": false,
         "title": "Veľké Oslo",
         "place": "Oslo",
@@ -360,7 +360,7 @@
       },
       {
         "id": 22,
-        "mapIconPath": "",
+        "mapIconPath": "/images/boat-40.png",
         "show": false,
         "title": "Prvá spoločná dovolenka",
         "place": "Barcelona",
@@ -377,7 +377,7 @@
       },
       {
         "id": 23,
-        "mapIconPath": "",
+        "mapIconPath": "/images/hotel-40.png",
         "show": false,
         "title": "Talianska rychlovka",
         "place": "Bergamo",
@@ -394,7 +394,7 @@
       },
       {
         "id": 24,
-        "mapIconPath": "",
+        "mapIconPath": "/images/hotel-40.png",
         "show": false,
         "title": "Český raj",
         "place": "Turnov",
@@ -411,7 +411,7 @@
       },
       {
         "id": 25,
-        "mapIconPath": "",
+        "mapIconPath": "/images/sleeping-bag-40.png",
         "show": false,
         "title": "Na pláži na VD Orava",
         "place": "Bobrov",
@@ -428,7 +428,7 @@
       },
       {
         "id": 26,
-        "mapIconPath": "",
+        "mapIconPath": "/images/tent-36.png",
         "show": false,
         "title": "V kempe",
         "place": "Prístav",
