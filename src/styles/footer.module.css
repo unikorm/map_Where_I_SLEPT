@@ -7,7 +7,8 @@ footer {
     padding: 1.4rem;
     border-radius: 1rem;
     max-width: 985px;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menuAndContactsInFooter {

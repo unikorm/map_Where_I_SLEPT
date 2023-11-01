@@ -11,4 +11,11 @@ html, body {
 
 #root {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#root footer {
+    /* display: flex; */
+    align-self: center;
 }
