@@ -14,7 +14,7 @@ const PopupContent = ({ content }) => (
 
 const Map = () => {
   const center = [48.825, 19.391];
-  const zoom = 7;
+  const zoom = 6;
   const data = blogData.posts;
 
   return (
@@ -37,9 +37,9 @@ const Map = () => {
             icon={L.icon({
               iconUrl:
                 process.env.PUBLIC_URL + marker.mapIconPath || defaultIcon,
-              iconSize: [38, 38],
-              iconAnchor: [19, 38],
-              popupAnchor: [0, -38],
+              iconSize: [36, 36],
+              iconAnchor: [18, 36],
+              popupAnchor: [0, -36],
             })}
           >
             <Popup>
