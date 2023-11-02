@@ -1,0 +1,12 @@
+
+.leaflet-popup-content {
+    margin: 1rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.leaflet-popup-content-wrapper {
+    width: 20.5rem;
+    height: 28.5rem;
+    overflow: hidden;
+}

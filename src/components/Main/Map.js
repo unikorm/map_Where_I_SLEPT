@@ -8,9 +8,14 @@ import L from "leaflet";
 
 import React from "react";
 
+
+
+
 const PopupContent = ({ content }) => (
   <p dangerouslySetInnerHTML={{ __html: content }} />
 );
+
+
 
 const Map = () => {
   const center = [48.825, 19.391];

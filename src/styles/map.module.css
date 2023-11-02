@@ -16,7 +16,8 @@
 .popUpBox {
     display: flex;
     flex-direction: column;
-    width: 17rem;
+    width: 100%;
+    height: 100%;
 }
 
 .popUpMain {
