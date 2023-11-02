@@ -18,4 +18,5 @@ html, body {
 #root footer {
     /* display: flex; */
     align-self: center;
+    /* box-sizing: border-box; */
 }
