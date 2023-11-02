@@ -9,7 +9,7 @@ import likenessLogo from "../../images/stars-24.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
-import React from "react";
+import React, { useRef } from "react";
 
 
 
@@ -23,10 +23,35 @@ const formatDate = (dateString) => {
   return new Date(dateString).toLocaleDateString(undefined, options);
 };
 
+const CustomZoomControl = ({ map }) => {
+  const zoomIn = () => map.setZoom(map.getZoom() + 1);
+  const zoomOut = () => map.setZoom(map.getZoom() - 1);
+
+  const customZoomControlStyle = {
+    position: "absolute",
+    top: "1rem",
+    left: "1rem",
+    zIndex: 1000,
+    display: "flex",
+    flexDirection: "column",
+  };
+
+  return (
+    <div className="custom-zoom-control" style={{ ...customZoomControlStyle }}>
+      <button onClick={zoomIn}>+</button>
+      <button onClick={zoomOut}>-</button>
+    </div>
+  );
+}
+
 const Map = () => {
   const center = [48.825, 19.391];
   const zoom = 6;
   const data = blogData.posts;
+   
+  const mapRef = useRef(null);
+
+
 
   return (
     <MapContainer
@@ -34,6 +59,7 @@ const Map = () => {
       zoom={zoom}
       maxZoom="18"
       scrollWheelZoom={false}
+      zoomControl={false}
       className={styles.mapContainer}
     >
       <TileLayer
@@ -66,10 +92,6 @@ const Map = () => {
                     <PopupContent content={marker.place} />
                   </aside>
                   <aside className={styles.popUpInfo}>
-                    {/* <PopupContent content={marker.date} /> */}
-                    {/* <PopupContent content={marker.how} /> */}
-                    {/* <PopupContent content={marker.id} /> */}
-
                     <div className={styles.postUnitInfoSection}>
                       <img src={dateLogo} alt="logo kalendaru pre datum kedy" />
                       <div className={styles.sectionWhen}>
@@ -91,7 +113,6 @@ const Map = () => {
                           <PopupContent content={marker.in} />
                       </div>
                     </div>
-
                   </aside>
                 </article>
               </section>
@@ -99,6 +120,7 @@ const Map = () => {
           </Marker>
         ) : null
       )}
+      <CustomZoomControl position="topright" map={mapRef.current} />
     </MapContainer>
   );
 };
