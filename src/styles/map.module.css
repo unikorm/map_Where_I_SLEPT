@@ -45,9 +45,44 @@
     font-family: 'Shantell Sans', cursive;
     border-top: rgba(0, 0, 0, 0.05) solid;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: .3rem 0 0 0;
     padding: .7rem 0 .6rem 0;
+}
+
+.postUnitInfoSection {
+    display: flex;
+}
+
+.postUnitInfoSection img {
+    display: flex;
+    height: max-content;
+    width: auto;
+    align-self: center;
+}
+
+.sectionWhen p:first-of-type,
+.sectionHow p:first-of-type,
+.sectionIn p:first-of-type {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: .9rem;
+    margin: 0 0 0 0;
+}
+
+.sectionWhen p:nth-child(2),
+.sectionHow p:nth-child(2),
+.sectionIn p:nth-child(2) {
+    font-weight: 500;
+    color: black;
+    font-size: .9rem;
+    margin: .1rem 0 0 0;
+}
+
+.sectionWhen,
+.sectionHow,
+.sectionIn {
+    margin: 0 0 0 .4rem;
 }
 
 .postCoverImage {

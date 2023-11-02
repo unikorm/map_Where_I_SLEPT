@@ -2,6 +2,9 @@ import styles from "../../styles/map.module.css";
 import blogData from "../../blogData.json";
 import postCover from "../../images/postCover.webp";
 import defaultIcon from "../../images/face-40.png";
+import dateLogo from "../../images/calendar-24.png";
+import placeLogo from "../../images/bed-20.png";
+import likenessLogo from "../../images/stars-24.png";
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
@@ -15,7 +18,10 @@ const PopupContent = ({ content }) => (
   <p dangerouslySetInnerHTML={{ __html: content }} />
 );
 
-
+const formatDate = (dateString) => {
+  const options = { year: "numeric", month: "numeric", day: "numeric" };
+  return new Date(dateString).toLocaleDateString(undefined, options);
+};
 
 const Map = () => {
   const center = [48.825, 19.391];
@@ -60,9 +66,32 @@ const Map = () => {
                     <PopupContent content={marker.place} />
                   </aside>
                   <aside className={styles.popUpInfo}>
-                    <PopupContent content={marker.date} />
-                    <PopupContent content={marker.how} />
-                    <PopupContent content={marker.id} />
+                    {/* <PopupContent content={marker.date} /> */}
+                    {/* <PopupContent content={marker.how} /> */}
+                    {/* <PopupContent content={marker.id} /> */}
+
+                    <div className={styles.postUnitInfoSection}>
+                      <img src={dateLogo} alt="logo kalendaru pre datum kedy" />
+                      <div className={styles.sectionWhen}>
+                          <p>When</p>
+                          <PopupContent content={formatDate(marker.date)} />
+                      </div>
+                    </div>
+                    <div className={styles.postUnitInfoSection}>
+                      <img src={likenessLogo} alt="logo pre hodnotenie miesta" /> 
+                      <div className={styles.sectionHow}>
+                          <p>How</p>
+                          <PopupContent content={marker.how} />
+                      </div>
+                    </div>
+                    <div className={styles.postUnitInfoSection}>
+                      <img src={placeLogo} alt="logo pre sposob spania"/>
+                      <div className={styles.sectionIn}>
+                          <p>In</p>
+                          <PopupContent content={marker.in} />
+                      </div>
+                    </div>
+
                   </aside>
                 </article>
               </section>
