@@ -1,6 +1,7 @@
 
 import Footer from "./Footer";
 import Header from "./Header";
+import styles from "../styles/root.module.css";
 
 import { Outlet, useLocation } from "react-router-dom";
 
@@ -12,7 +13,9 @@ const Root = () => {
     <>
       <Header isAboutMePage={isAboutMePage} />
       <Outlet />
-      <Footer isAboutMePage={isAboutMePage} />
+      <div className={styles.causeStyling}>
+        <Footer isAboutMePage={isAboutMePage} />
+      </div>
     </>
   );
 };

@@ -14,9 +14,3 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-
-#root footer {
-    /* display: flex; */
-    align-self: center;
-    /* box-sizing: border-box; */
-}
