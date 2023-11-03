@@ -9,7 +9,8 @@ import likenessLogo from "../../images/stars-24.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
+import ReactDOM from "react";
 
 
 
@@ -36,13 +37,22 @@ const CustomZoomControl = ({ map }) => {
     flexDirection: "column",
   };
 
+  const buttonStyle = {
+    margin: "0.25rem",
+    padding: "0.25rem 1rem",
+    backgroundColor: "white",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    cursor: "pointer",
+  };
+
   return (
-    <div className="custom-zoom-control" style={{ ...customZoomControlStyle }}>
-      <button onClick={zoomIn}>+</button>
-      <button onClick={zoomOut}>-</button>
+    <div className="custom-zoom-control" style={customZoomControlStyle}>
+      <button onClick={zoomIn} style={buttonStyle}>+</button>
+      <button onClick={zoomOut} style={buttonStyle}>-</button>
     </div>
   );
-}
+};
 
 const Map = () => {
   const center = [48.825, 19.391];
@@ -50,6 +60,25 @@ const Map = () => {
   const data = blogData.posts;
    
   const mapRef = useRef(null);
+
+  useEffect(() => {
+    const map = mapRef.current;
+
+    if (map) {
+      const customZoomControl = L.control();
+      customZoomControl.onAdd = function () {
+        const container = L.DomUtil.create("div");
+        const zoomControlComponent = (
+          <CustomZoomControl map={map} />
+        );
+
+        ReactDOM.render(zoomControlComponent, container);
+
+        return container;
+      };
+      customZoomControl.addTo(map);
+    }
+  }, []);
 
 
 
@@ -61,6 +90,9 @@ const Map = () => {
       scrollWheelZoom={false}
       zoomControl={false}
       className={styles.mapContainer}
+      whenCreated={(map) => {
+        mapRef.current = map;
+      }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -120,7 +152,7 @@ const Map = () => {
           </Marker>
         ) : null
       )}
-      <CustomZoomControl position="topright" map={mapRef.current} />
+      {/* <CustomZoomControl map={mapRef.current} /> */}
     </MapContainer>
   );
 };
