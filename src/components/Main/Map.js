@@ -1,3 +1,4 @@
+
 import styles from "../../styles/map.module.css";
 import blogData from "../../blogData.json";
 import postCover from "../../images/postCover.webp";
@@ -9,8 +10,7 @@ import likenessLogo from "../../images/stars-24.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 
-import React, { useRef, useEffect } from "react";
-import ReactDOM from "react";
+import React from "react";
 
 
 
@@ -24,75 +24,20 @@ const formatDate = (dateString) => {
   return new Date(dateString).toLocaleDateString(undefined, options);
 };
 
-const CustomZoomControl = ({ map }) => {
-  const zoomIn = () => map.setZoom(map.getZoom() + 1);
-  const zoomOut = () => map.setZoom(map.getZoom() - 1);
-
-  const customZoomControlStyle = {
-    position: "absolute",
-    top: "1rem",
-    left: "1rem",
-    zIndex: 1000,
-    display: "flex",
-    flexDirection: "column",
-  };
-
-  const buttonStyle = {
-    margin: "0.25rem",
-    padding: "0.25rem 1rem",
-    backgroundColor: "white",
-    border: "1px solid #ccc",
-    borderRadius: "4px",
-    cursor: "pointer",
-  };
-
-  return (
-    <div className="custom-zoom-control" style={customZoomControlStyle}>
-      <button onClick={zoomIn} style={buttonStyle}>+</button>
-      <button onClick={zoomOut} style={buttonStyle}>-</button>
-    </div>
-  );
-};
-
 const Map = () => {
   const center = [48.825, 19.391];
   const zoom = 6;
   const data = blogData.posts;
    
-  const mapRef = useRef(null);
-
-  useEffect(() => {
-    const map = mapRef.current;
-
-    if (map) {
-      const customZoomControl = L.control();
-      customZoomControl.onAdd = function () {
-        const container = L.DomUtil.create("div");
-        const zoomControlComponent = (
-          <CustomZoomControl map={map} />
-        );
-
-        ReactDOM.render(zoomControlComponent, container);
-
-        return container;
-      };
-      customZoomControl.addTo(map);
-    }
-  }, []);
-
-
-
   return (
     <MapContainer
       center={center}
       zoom={zoom}
       maxZoom="18"
       scrollWheelZoom={false}
-      zoomControl={false}
+      position="topright"
+      // zoomControl={false}
       className={styles.mapContainer}
-      whenCreated={(map) => {
-        mapRef.current = map;
-      }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -152,7 +97,6 @@ const Map = () => {
           </Marker>
         ) : null
       )}
-      {/* <CustomZoomControl map={mapRef.current} /> */}
     </MapContainer>
   );
 };
