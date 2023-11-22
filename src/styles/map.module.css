@@ -1,0 +1,109 @@
+
+.mapContainer {
+    height: 500px;  /* 600 */ 
+    margin: 1rem auto 1rem;
+    overflow: hidden;
+    border-radius: 30px;
+    border-style: none;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.popUpBox p {
+    margin: 0;
+}
+ 
+.popUpBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 93%;
+}
+
+.popUpMain {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.2rem 0 .7rem 0;
+    font-family: 'Shantell Sans', cursive;
+}
+
+.popUpMain p:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0 0 0 0;
+}
+
+.popUpMain p:nth-of-type(2) {
+    font-weight: 300;
+    font-size: .95rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin: .125rem 0 0 0;
+}
+
+.popUpInfo {
+    font-family: 'Shantell Sans', cursive;
+    border-top: rgba(0, 0, 0, 0.05) solid;
+    display: flex;
+    justify-content: space-between;
+    margin: .3rem 0 0 0;
+    padding: .7rem 0 .6rem 0;
+}
+
+.postUnitInfoSection {
+    display: flex;
+}
+
+.postUnitInfoSection img {
+    display: flex;
+    height: max-content;
+    width: auto;
+    align-self: center;
+}
+
+.sectionWhen p:first-of-type,
+.sectionHow p:first-of-type,
+.sectionIn p:first-of-type {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: .9rem;
+    margin: 0 0 0 0;
+}
+
+.sectionWhen p:nth-child(2),
+.sectionHow p:nth-child(2),
+.sectionIn p:nth-child(2) {
+    font-weight: 500;
+    color: black;
+    font-size: .9rem;
+    margin: .1rem 0 0 0;
+}
+
+.sectionWhen,
+.sectionHow,
+.sectionIn {
+    margin: 0 0 0 .4rem;
+}
+
+.postCoverImage {
+    width: 100%;
+    height: 18.5rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+
+@media screen and (min-width: 800px) {
+    .mapContainer {
+        height: 625px;
+    }
+}
+
+@media screen and (min-width: 1275px) {
+    .mapContainer {
+        height: 675px;
+    }
+}

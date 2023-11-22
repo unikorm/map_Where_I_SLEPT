@@ -1,0 +1,95 @@
+
+.postUnit {
+    display: flex;
+    flex-direction: column;
+    padding: .8rem;
+    box-sizing: border-box;
+    border-style: none;
+    border-radius: 1rem;
+    background-color: #ac754d14;
+    transition: margin .3s ease-out;
+}
+
+.postUnit:hover {
+    color: black;
+}
+
+.postUnit:hover .postUnitTitle h3 {
+    transition: color .3s ;
+    color: #e6890b;
+  }
+
+.postUnit:hover {
+    margin-top: -.5rem;
+    box-shadow:  0px 0px 11px rgba(0, 0, 0, 0.07);
+}
+
+.postCoverImage { 
+    width: 100%;
+    height: 395px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1rem;
+}
+
+.postUnitTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.2rem 0 .7rem 0;
+}
+
+.postUnitTitle h3 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0 0 0 0;
+}
+
+.postUnitTitle p {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    margin: .2rem 0 0 0;
+}
+
+.postUnitInfo {
+    border-top: rgba(0, 0, 0, 0.05) solid;
+    display: flex;
+    justify-content: space-around;
+    margin: .3rem 0 0 0;
+    padding: .7rem 0 .6rem 0;
+}
+
+.postUnitInfoSection {
+    display: flex;
+}
+
+.postUnitInfoSection img {
+    display: flex;
+    height: max-content;
+    width: auto;
+    align-self: center;
+}
+
+.sectionWhen p:first-of-type,
+.sectionHow p:first-of-type,
+.sectionIn p:first-of-type {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: .9rem;
+    margin: 0 0 0 0;
+}
+
+.sectionWhen p:nth-child(2),
+.sectionHow p:nth-child(2),
+.sectionIn p:nth-child(2) {
+    font-weight: 500;
+    color: black;
+    font-size: .9rem;
+    margin: .1rem 0 0 0;
+}
+
+.sectionWhen,
+.sectionHow,
+.sectionIn {
+    margin: 0 0 0 .4rem;
+}

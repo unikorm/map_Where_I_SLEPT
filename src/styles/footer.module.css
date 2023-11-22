@@ -1,0 +1,67 @@
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c5d893;
+    margin: 2rem 2rem 4rem 2rem;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    max-width: 985px;
+    width: 100%;
+}
+
+.menuAndContactsInFooter {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contactsSectionInFooter {
+    list-style-type: none;
+    padding: .8rem 0;
+    margin: 0;
+}
+
+.logoLinkStyle {
+    font-family: 'Coming Soon', cursive; 
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logoLinkStyle p {
+    margin: 0;
+}
+
+.linkStyleMenu {
+    text-decoration: none;
+    color: #fbfcf6;
+    background-color: #ac5b4d;
+    padding: .8rem;
+    border-radius: 14px;
+    transition: 1s;
+}
+
+.active-link {
+    background-color: #fc9d45;
+    color: #ac5b4d;
+    transition: 1s;
+}
+
+.linkToGithub {
+    margin: 0 0 1.2rem 3.7rem;
+}
+
+.active {
+    background-color: #e68b0bd8;
+    color: #ffffff; 
+}
+
+
+
+
+@media screen and (min-width: 1275px) {
+    footer {
+        max-width: 1230px;
+    }
+}

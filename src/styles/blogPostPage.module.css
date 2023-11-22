@@ -1,0 +1,129 @@
+
+.blogPostPage {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.divImage {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    max-width: 1300px;
+    height: 650px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.mainImage {
+    width: 100%;
+    max-width: 1300px;
+    height: 650px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1rem;
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 0 1rem;
+    max-width: 1300px;
+}
+
+.mainSectionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.article {
+    flex-grow: 1;
+}
+
+.aside {
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.asideBox {
+    background: #c4d89345;
+    border-radius: 1rem;
+    padding: 1rem;
+    min-height: fit-content;
+}
+
+.article p:first-of-type {
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+    line-height: 1.9rem;
+}
+
+.article p {
+    margin: 0 0 3rem;
+    line-height: 1.7rem;
+}
+
+.article p:nth-of-type(2) {
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+.mapSectionInPost {
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) {
+    .mainSection {
+        padding: 0 1.5rem;
+    }
+}
+
+
+@media screen and (min-width: 780px) {
+    .blogPostPage {
+        padding: 0 1rem;
+    }
+
+    .divImage {
+        height: 850px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .mainSectionContainer {
+        flex-wrap: nowrap;
+    }
+
+    .article {
+        flex: 3;
+    }
+    
+    .aside {
+        flex: 1;
+        margin-left: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .divImage {
+        height: 690px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .mainSection {
+        padding: 0;
+    }
+}

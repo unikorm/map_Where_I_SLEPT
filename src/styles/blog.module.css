@@ -1,0 +1,60 @@
+
+.blogSection {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.h3 {
+    text-align: center;
+    margin: 0 0 .7rem 0;
+    padding: 1.75rem 0 0;
+    font-size: 1.5rem;
+    align-self: center;
+    max-width: 1030px;
+}
+
+.postsTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 2fr));
+    gap: 1rem;
+    max-width: 1030px;
+    width: 100%;
+    justify-content: center;
+}
+
+.postBox {
+    height: 35rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+}
+
+.loadMoreBttn {
+    margin-top: 2.75rem;
+    padding: 1rem 3.25rem;
+    font-size: 1rem;
+    font-family: 'Shantell Sans', cursive;
+    border: none;
+    border-radius: 1rem;
+    background: #ac5b4d;
+    color: #fbfcf6;
+    transition: background .5s ease-in;
+}
+
+.loadMoreBttn:hover {
+    color: #e6890b;
+    background: #ac5b4d1d;
+}
+
+
+
+
+
+@media screen and (min-width: 1275px) {
+    .postsTable {
+        max-width: 1275px;
+    }
+}
